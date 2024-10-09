@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./shared/components/header/page";
+import Footer from "./shared/components/footer/page";
 
 export const metadata: Metadata = {
   title: "Beer Blog",
@@ -17,7 +18,7 @@ export default function RootLayout({
       <body>
         <Header/>
         {children}
-        <footer>Подвал</footer>
+        <Footer/>
       </body>
     </html>
   );

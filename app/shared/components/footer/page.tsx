@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-export default function Header() {
+export default function Footer() {
   return (
     <header className="py-4 bg-gray-800">
       <div className="container mx-auto">
-        <nav className="flex justify-between items-center">
+        <nav className="flex items-center">
           <Link href={'/'} className="flex hover:opacity-80 duration-300">
             <div className="relative w-10 h-10 bg-yellow-500 text-gray-800">
               <span className="absolute bottom-0 left-1 text-2xl font-bold ">Be</span>
@@ -18,11 +18,11 @@ export default function Header() {
               <span className="absolute bottom-0 left-1 text-2xl font-bold ">Blog</span>
             </div>
           </Link>
-          <div className="nav-link flex flex-row">
-            <Link href={'/about'} className="text-xl font-bold text-yellow-500 hover:opacity-80 duration-300">About</Link>
-            <Link href={'/articles'} className="text-xl font-bold pl-5 text-yellow-500 hover:opacity-80 duration-300">Articles</Link>
-            <Link href={'/contacts'} className="text-xl font-bold pl-5 text-yellow-500 hover:opacity-80 duration-300">Contacts</Link>
+          <div className="flex-1 ml-5 font-semibold text-center text-yellow-500"> 
+            Данный сайт не является коммерческим проектом. Разработан в учебных целях и является адаптацией&nbsp; 
+            <Link href={'https://beerscience.in.ua/'} target="_blank" rel="noopener noreferrer" className="hover:underline">beerscience.in.ua</Link>
           </div>
+          
         </nav>
       </div>
     </header>
