@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <header className="py-4 bg-gray-800">
+    <footer className="py-4 bg-gray-800">
       <div className="container mx-auto">
         <nav className="flex items-center">
           <Link href={'/'} className="flex hover:opacity-80 duration-300">
@@ -25,6 +25,6 @@ export default function Footer() {
           
         </nav>
       </div>
-    </header>
+    </footer>
   );
 }
