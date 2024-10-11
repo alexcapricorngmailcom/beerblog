@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./shared/components/header/page";
-import Footer from "./shared/components/footer/page";
+import Header from "./shared/components/Header";
+import Footer from "./shared/components/Footer";
 
 export const metadata: Metadata = {
   title: "Beer Blog",
