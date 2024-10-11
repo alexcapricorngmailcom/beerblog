@@ -12,12 +12,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'tableSand': '#f8e8a0',
+        'tableSand-b': '#ffcc33',
+        'tableGreen': '#c6d671',
+        'tableGreen-b': '#649025',
+
+        
       },
       height: {
         '128': '32rem',
         '144': '36rem',
+      },
+      gridTemplateColumns: {
+        '14': 'repeat(14, minmax(0, 1fr))',
+      },
+      gridTemplateRows: {
+        '14': 'repeat(14, minmax(0, 1fr))',
       },
     },
   },
