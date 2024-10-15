@@ -1,5 +1,6 @@
 import BeerColumnTitle from "./BeerColumnTitle";
 import BeerElement from "./BeerElement";
+import EmptyBeerElement from "./EmptyBeerElement";
 
 export default function BeerTable(props: propsBeerElementType) {
   return (
@@ -10,7 +11,7 @@ export default function BeerTable(props: propsBeerElementType) {
         {/* 1 column title */}
         <BeerColumnTitle 
           title='WHEAT BEER'
-          titletextColor='text-wheatBeer'          
+          titletextColor='text-wheatBeerBorder'          
         />
         {/* 1-1 element*/}
         <BeerElement
@@ -91,7 +92,7 @@ export default function BeerTable(props: propsBeerElementType) {
         {/* 2 column title */}
         <BeerColumnTitle 
           title='LAMBIC & SOUR'
-          titletextColor='text-lambicSour'          
+          titletextColor='text-lambicSourBorder'          
         />
         {/* 2-1 element*/}
         <BeerElement
@@ -172,7 +173,7 @@ export default function BeerTable(props: propsBeerElementType) {
         {/* 3 column title */}
         <BeerColumnTitle 
           title='BELGIAN ALE'
-          titletextColor='text-belgianAle'          
+          titletextColor='text-belgianAleBorder'          
         />
         {/* 3-1 element*/}
         <BeerElement
@@ -247,7 +248,161 @@ export default function BeerTable(props: propsBeerElementType) {
           borderColor='border-belgianAleBorder'
         />
       </div>
-      
+
+      {/* 4 column */}
+      <div className="flex flex-col gap-3">
+        {/* 4 column title */}
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <BeerColumnTitle 
+          title='PALE ALE'
+          titletextColor='text-paleAleBorder'          
+        />
+        {/* 4-1 element*/}
+        <BeerElement
+          number='10'
+          initialDensity='1.043-1.056'
+          finalDensity='1.008-1.016'
+          name='Pale Ale'
+          ABV='4.5-5.5%'
+          IBU='20-40'
+          SRM='4-11'
+          bgColor='bg-paleAle'
+          borderColor='border-paleAleBorder'
+        />
+        {/* 4-2 element*/}
+        <BeerElement
+          number='17'
+          initialDensity='1.045-1.056'
+          finalDensity='1.010-1.015'
+          name='American Pale Ale'
+          ABV='4.5-5.7%'
+          IBU='20-40'
+          SRM='4-11'
+          bgColor='bg-paleAle'
+          borderColor='border-paleAleBorder'
+        />
+        {/* 4-3 element*/}
+        <BeerElement
+          number='30'
+          initialDensity='1.050-1.075'
+          finalDensity='1.012-1.018'
+          name='India Pale Ale'
+          ABV='5.1-7.6%'
+          IBU='40-60'
+          SRM='8-14'
+          bgColor='bg-paleAle'
+          borderColor='border-paleAleBorder'
+        />
+        {/* 4-4 element*/}
+        <BeerElement
+          number='44'
+          initialDensity='1.043-1.056'
+          finalDensity='1.008-1.016'
+          name='American Amber Ale'
+          ABV='4.5-5.7%'
+          IBU='20-40'
+          SRM='11-18'
+          bgColor='bg-paleAle'
+          borderColor='border-paleAleBorder'
+        />
+      </div>
+
+      {/* 5 column */}
+      <div className="flex flex-col gap-3">
+        {/* 5 column title */}
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <BeerColumnTitle 
+          title='ENGLISH BITTER'
+          titletextColor='text-englishBitterBorder'          
+        />
+        {/* 5-1 element*/}
+        <BeerElement
+          number='18'
+          initialDensity='1.030-1.038'
+          finalDensity='1.006-1.012'
+          name='Ordinary Bitter'
+          ABV='3.0-3.8%'
+          IBU='20-35'
+          SRM='6-12'
+          bgColor='bg-englishBitter'
+          borderColor='border-englishBitterBorder'
+        />
+        {/* 5-2 element*/}
+        <BeerElement
+          number='31'
+          initialDensity='1.039-1.045'
+          finalDensity='1.006-1.014'
+          name='Special Bitter'
+          ABV='3.7-4.8%'
+          IBU='25-40'
+          SRM='12-14'
+          bgColor='bg-englishBitter'
+          borderColor='border-englishBitterBorder'
+        />
+        {/* 5-3 element*/}
+        <BeerElement
+          number='45'
+          initialDensity='1.046-1.065'
+          finalDensity='1.010-1.018'
+          name='Extra Special Bitter'
+          ABV='3.7-4.8%'
+          IBU='30-45'
+          SRM='12-14'
+          bgColor='bg-englishBitter'
+          borderColor='border-englishBitterBorder'
+        />
+      </div>
+
+        {/* 6 column */}
+        <div className="flex flex-col gap-3">
+        {/* 6 column title */}
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <BeerColumnTitle 
+          title='SCOTISH ALE'
+          titletextColor='text-scotishAleBorder'          
+        />
+        {/* 6-1 element*/}
+        <BeerElement
+          number='19'
+          initialDensity='1.030-1.035'
+          finalDensity='1.006-1.012'
+          name='Scottish Light 60/-'
+          ABV='2.8-4.0%'
+          IBU='9-20'
+          SRM='8-17'
+          bgColor='bg-scotishAle'
+          borderColor='border-scotishAleBorder'
+        />
+        {/* 6-2 element*/}
+        <BeerElement
+          number='32'
+          initialDensity='1.035-1.040'
+          finalDensity='1.010-1.014'
+          name='Scottish Heavy 70/-'
+          ABV='3.5-4.1%'
+          IBU='12-25'
+          SRM='10-19'
+          bgColor='bg-scotishAle'
+          borderColor='border-scotishAleBorder'
+        />
+        {/* 6-3 element*/}
+        <BeerElement
+          number='46'
+          initialDensity='1.040-1.050'
+          finalDensity='1.010-1.018'
+          name='Scottish Export 80/-'
+          ABV='4.0-4.9%'
+          IBU='15-36'
+          SRM='10-19'
+          bgColor='bg-scotishAle'
+          borderColor='border-scotishAleBorder'
+        />
+      </div>
 
     </div>
   );

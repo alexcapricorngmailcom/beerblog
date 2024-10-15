@@ -18,6 +18,14 @@ const config: Config = {
         'lambicSourBorder': '#649025',
         'belgianAle': '#d4d4d4',
         'belgianAleBorder': '#9a9a9a',
+        'paleAle': '#fd9f57',
+        'paleAleBorder': '#d56418',
+        'englishBitter': '#e0adcf',
+        'englishBitterBorder': '#85268e',
+        'scotishAle': '#f7bcd8',
+        'scotishAleBorder': '#f261b2',
+
+        
       },
       height: {
         '128': '32rem',
