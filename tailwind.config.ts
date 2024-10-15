@@ -12,12 +12,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'tableSand': '#f8e8a0',
-        'borderTableSand': '#ffcc33',
-        'tableGreen': '#c6d671',
-        'borderTableGreen': '#649025',
-
-        
+        'wheatBeer': '#f8e8a0',
+        'wheatBeerBorder': '#ffcc33',
+        'lambicSour': '#c6d671',
+        'lambicSourBorder': '#649025',
+        'belgianAle': '#d4d4d4',
+        'belgianAleBorder': '#9a9a9a',
       },
       height: {
         '128': '32rem',
@@ -41,7 +41,12 @@ const config: Config = {
   
         '2xl': '1537px',
         // => @media (min-width: 1536px) { ... }
-      }
+      },
+
+
+      // zIndex: {
+      //   '9999999999': '9999999999',
+      // }
 
       // gridTemplateColumns: {
       //   '14': 'repeat(14, minmax(0, 1fr))',
