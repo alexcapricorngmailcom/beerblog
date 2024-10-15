@@ -356,8 +356,8 @@ export default function BeerTable(props: propsBeerElementType) {
         />
       </div>
 
-        {/* 6 column */}
-        <div className="flex flex-col gap-3">
+      {/* 6 column */}
+      <div className="flex flex-col gap-3">
         {/* 6 column title */}
         <EmptyBeerElement/>
         <EmptyBeerElement/>
@@ -401,6 +401,91 @@ export default function BeerTable(props: propsBeerElementType) {
           SRM='10-19'
           bgColor='bg-scotishAle'
           borderColor='border-scotishAleBorder'
+        />
+      </div>
+
+      {/* 7 column */}
+      <div className="flex flex-col gap-3">
+        {/* 7 column title */}
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <BeerColumnTitle 
+          title='BROWN ALE'
+          titletextColor='text-brownAleBorder'          
+        />
+        {/* 7-1 element*/}
+        <BeerElement
+          number='20'
+          initialDensity='1.030-1.038'
+          finalDensity='1.004-1.012'
+          name='English Mild'
+          ABV='2.5-4.1%'
+          IBU='10-24'
+          SRM='10-25'
+          bgColor='bg-brownAle'
+          borderColor='border-brownAleBorder'
+        />
+        {/* 7-2 element*/}
+        <BeerElement
+          number='33'
+          initialDensity='1.040-1.055'
+          finalDensity='1.010-1.018'
+          name='American Brown'
+          ABV='4.2-6.0%'
+          IBU='25-60'
+          SRM='15-22'
+          bgColor='bg-brownAle'
+          borderColor='border-brownAleBorder'
+        />
+        {/* 7-3 element*/}
+        <BeerElement
+          number='47'
+          initialDensity='1.040-1.050'
+          finalDensity='1.008-1.014'
+          name='English Brown'
+          ABV='3.5-6.0%'
+          IBU='15-25'
+          SRM='15-30'
+          bgColor='bg-brownAle'
+          borderColor='border-brownAleBorder'
+        />
+      </div>
+
+      {/* 8 column */}
+      <div className="flex flex-col gap-3">
+        {/* 8 column title */}
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <BeerColumnTitle 
+          title='PORTER'
+          titletextColor='text-porterBorder'          
+        />
+        {/* 8-1 element*/}
+        <BeerElement
+          number='34'
+          initialDensity='1.040-1.050'
+          finalDensity='1.008-1.014'
+          name='Brown Porter'
+          ABV='3.8-5.2%'
+          IBU='20-30'
+          SRM='20-30'
+          bgColor='bg-porter'
+          borderColor='border-porterBorder'
+        />
+        {/* 8-2 element*/}
+        <BeerElement
+          number='48'
+          initialDensity='1.050-1.065'
+          finalDensity='1.012-1.016'
+          name='Robust Porter'
+          ABV='4.8-6.0%'
+          IBU='25-45'
+          SRM='30-40'
+          bgColor='bg-porter'
+          borderColor='border-porterBorder'
         />
       </div>
 

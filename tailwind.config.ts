@@ -24,6 +24,10 @@ const config: Config = {
         'englishBitterBorder': '#85268e',
         'scotishAle': '#f7bcd8',
         'scotishAleBorder': '#f261b2',
+        'brownAle': '#dec38b',
+        'brownAleBorder': '#ba830a',
+        'porter': '#a48a5e',
+        'porterBorder': '#523b0d',
 
         
       },
