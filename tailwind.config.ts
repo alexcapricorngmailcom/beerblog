@@ -28,7 +28,19 @@ const config: Config = {
         'brownAleBorder': '#ba830a',
         'porter': '#a48a5e',
         'porterBorder': '#523b0d',
-
+        'lightStout': '#8a8a8a',
+        'lightStoutBorder': '#414141',
+        'heavyStout': '#707070',
+        'heavyStoutBorder': '#464646',
+        'pilsner': '#eef3da',
+        'pilsnerBorder': '#7e7e54',
+        'americanLager': '#82bcc7',
+        'americanLagerBorder': '#537986',
+        'europeanLager': '#e8dbe0',
+        'europeanLagerBorder': '#caa6b2',
+        'bockLager': '#baa799',
+        'bockLagerBorder': '#5f4d48',
+        
         
       },
       height: {

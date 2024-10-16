@@ -489,6 +489,327 @@ export default function BeerTable(props: propsBeerElementType) {
         />
       </div>
 
+      {/* 9 column */}
+      <div className="flex flex-col gap-3">
+        {/* 9 column title */}
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <BeerColumnTitle 
+          title='STOUT'
+          titletextColor='text-lightStoutBorder'          
+        />
+        {/* 9-1 element*/}
+        <BeerElement
+          number='21'
+          initialDensity='1.035-1.050'
+          finalDensity='1.008-1.014'
+          name='Dry Stout'
+          ABV='3.2-5.5%'
+          IBU='40-50'
+          SRM='40+'
+          bgColor='bg-lightStout'
+          borderColor='border-lightStoutBorder'
+        />
+        {/* 9-2 element*/}
+        <BeerElement
+          number='35'
+          initialDensity='1.035-1.066'
+          finalDensity='1.010-1.022'
+          name='Sweet Stout'
+          ABV='3.2-6.4%'
+          IBU='20-40'
+          SRM='40+'
+          bgColor='bg-lightStout'
+          borderColor='border-lightStoutBorder'
+        />
+        {/* 9-3 element*/}
+        <BeerElement
+          number='49'
+          initialDensity='1.035-1.060'
+          finalDensity='1.008-1.021'
+          name='Oatmeal Stout'
+          ABV='3.3-6.1%'
+          IBU='20-50'
+          SRM='40+'
+          bgColor='bg-lightStout'
+          borderColor='border-lightStoutBorder'
+        />
+      </div>
+
+      {/* 10 column */}
+      <div className="flex flex-col gap-3">
+        {/* 10 column title */}
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <BeerColumnTitle 
+          title='STOUT'
+          titletextColor='text-heavyStoutBorder'          
+        />
+        {/* 10-1 element*/}
+        <BeerElement
+          number='22'
+          initialDensity='1.050-1.075'
+          finalDensity='1.010-1.017'
+          name='Foreign Extra Stout'
+          ABV='5.0-7.5%'
+          IBU='35-70'
+          SRM='40+'
+          bgColor='bg-heavyStout'
+          borderColor='border-heavyStoutBorder'
+        />
+        {/* 10-2 element*/}
+        <BeerElement
+          number='36'
+          initialDensity='1.075-1.090'
+          finalDensity='1.020-1.030'
+          name='Imperial Stout'
+          ABV='7.8-9.0%'
+          IBU='50-80'
+          SRM='40+'
+          bgColor='bg-heavyStout'
+          borderColor='border-heavyStoutBorder'
+        />
+        {/* 10-3 element*/}
+        <BeerElement
+          number='50'
+          initialDensity='1.075-1.100'
+          finalDensity='1.018-1.030'
+          name='Pidorussian Imperial'
+          ABV='8.0-12.0%'
+          IBU='50-90'
+          SRM='40+'
+          bgColor='bg-heavyStout'
+          borderColor='border-heavyStoutBorder'
+        />
+      </div>
+
+      {/* 11 column */}
+      <div className="flex flex-col gap-3">
+        {/* 11 column title */}
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <BeerColumnTitle 
+          title='PILSNER'
+          titletextColor='text-pilsnerBorder'          
+        />
+        {/* 11-1 element*/}
+        <BeerElement
+          number='23'
+          initialDensity='1.044-1.050'
+          finalDensity='1.006-1.012'
+          name='German Pilsner'
+          ABV='4.6-5.4%'
+          IBU='25-45'
+          SRM='2-4'
+          bgColor='bg-pilsner'
+          borderColor='border-pilsnerBorder'
+        />
+        {/* 11-2 element*/}
+        <BeerElement
+          number='37'
+          initialDensity='1.044-1.056'
+          finalDensity='1.014-1.020'
+          name='Bohemian Pilsner'
+          ABV='4.1-5.1%'
+          IBU='35-45'
+          SRM='3-5'
+          bgColor='bg-pilsner'
+          borderColor='border-pilsnerBorder'
+        />
+        {/* 11-3 element*/}
+        <BeerElement
+          number='51'
+          initialDensity='1.055-1.060'
+          finalDensity='1.012-1.018'
+          name='American Pilsner'
+          ABV='5.0-6.0%'
+          IBU='20-40'
+          SRM='3-6'
+          bgColor='bg-pilsner'
+          borderColor='border-pilsnerBorder'
+        />
+      </div>
+
+      {/* 12 column */}
+      <div className="flex flex-col gap-3">
+        {/* 12 column title */}
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <BeerColumnTitle 
+          title='AMERICAN LAGER'
+          titletextColor='text-americanLagerBorder'          
+        />
+        {/* 12-1 element*/}
+        <BeerElement
+          number='11'
+          initialDensity='1.024-1.040'
+          finalDensity='1.002-1.008'
+          name='American Lite'
+          ABV='2.9-4.5%'
+          IBU='8-15'
+          SRM='2-4'
+          bgColor='bg-americanLager'
+          borderColor='border-americanLagerBorder'
+        />
+        {/* 12-2 element*/}
+        <BeerElement
+          number='24'
+          initialDensity='1.040-1.046'
+          finalDensity='1.006-1.010'
+          name='American Standard'
+          ABV='4.1-4.8%'
+          IBU='5-17'
+          SRM='2-6'
+          bgColor='bg-americanLager'
+          borderColor='border-americanLagerBorder'
+        />
+        {/* 12-3 element*/}
+        <BeerElement
+          number='38'
+          initialDensity='1.046-1.050'
+          finalDensity='1.010-1.014'
+          name='American Premium'
+          ABV='4.6-5.1%'
+          IBU='13-23'
+          SRM='2-8'
+          bgColor='bg-americanLager'
+          borderColor='border-americanLagerBorder'
+        />
+        {/* 12-4 element*/}
+        <BeerElement
+          number='52'
+          initialDensity='1.040-1.050'
+          finalDensity='1.008-1.012'
+          name='American Dark'
+          ABV='4.1-5.6%'
+          IBU='14-20'
+          SRM='10-20'
+          bgColor='bg-americanLager'
+          borderColor='border-americanLagerBorder'
+        />
+      </div>
+      
+      {/* 13 column */}
+      <div className="flex flex-col gap-3">
+        {/* 13 column title */}
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <BeerColumnTitle 
+          title='EUROPEAN LAGER'
+          titletextColor='text-europeanLagerBorder'          
+        />
+        {/* 13-1 element*/}
+        <BeerElement
+          number='12'
+          initialDensity='1.044-1.050'
+          finalDensity='1.008-1.012'
+          name='Munich Helles'
+          ABV='4.5-5.6%'
+          IBU='18-25'
+          SRM='3-5'
+          bgColor='bg-europeanLager'
+          borderColor='border-europeanLagerBorder'
+        />
+        {/* 13-2 element*/}
+        <BeerElement
+          number='25'
+          initialDensity='1.048-1.056'
+          finalDensity='1.010-1.014'
+          name='Dort- munder'
+          ABV='5.1-6.1%'
+          IBU='23-29'
+          SRM='4-6'
+          bgColor='bg-europeanLager'
+          borderColor='border-europeanLagerBorder'
+        />
+        {/* 13-3 element*/}
+        <BeerElement
+          number='39'
+          initialDensity='1.052-1.056'
+          finalDensity='1.010-1.014'
+          name='Munich Dunkel'
+          ABV='4.8-5.4%'
+          IBU='16-25'
+          SRM='17-23'
+          bgColor='bg-europeanLager'
+          borderColor='border-europeanLagerBorder'
+        />
+        {/* 13-4 element*/}
+        <BeerElement
+          number='53'
+          initialDensity='1.044-1.052'
+          finalDensity='1.012-1.016'
+          name='Schwarz- bier'
+          ABV='3.8-5.0%'
+          IBU='22-30'
+          SRM='25-40+'
+          bgColor='bg-europeanLager'
+          borderColor='border-europeanLagerBorder'
+        />
+      </div>
+
+      {/* 14 column */}
+      <div className="flex flex-col gap-3">
+        {/* 14 column title */}
+        <EmptyBeerElement/>
+        <EmptyBeerElement/>
+        <BeerColumnTitle 
+          title='BOCK'
+          titletextColor='text-bockLagerBorder'          
+        />
+        {/* 14-1 element*/}
+        <BeerElement
+          number='13'
+          initialDensity='1.066-1.074'
+          finalDensity='1.011-1.020'
+          name='Helles Bock'
+          ABV='6.0-7.5%'
+          IBU='20-35'
+          SRM='4-10'
+          bgColor='bg-bockLager'
+          borderColor='border-bockLagerBorder'
+        />
+        {/* 14-2 element*/}
+        <BeerElement
+          number='26'
+          initialDensity='1.074-1.080'
+          finalDensity='1.020-1.028'
+          name='Doppelbock'
+          ABV='6.6-7.9%'
+          IBU='20-30'
+          SRM='12-30'
+          bgColor='bg-bockLager'
+          borderColor='border-bockLagerBorder'
+        />
+        {/* 14-3 element*/}
+        <BeerElement
+          number='40'
+          initialDensity='1.066-1.074'
+          finalDensity='1.018-1.024'
+          name='Traditional Bock'
+          ABV='6.4-7.6%'
+          IBU='20-30'
+          SRM='15-30'
+          bgColor='bg-bockLager'
+          borderColor='border-bockLagerBorder'
+        />
+        {/* 14-4 element*/}
+        <BeerElement
+          number='54'
+          initialDensity='1.090-1.116'
+          finalDensity='1.023-1.035'
+          name='Eisbock'
+          ABV='8.7-14.4%'
+          IBU='25-50'
+          SRM='18-40+'
+          bgColor='bg-bockLager'
+          borderColor='border-bockLagerBorder'
+        />
+      </div>
+
     </div>
   );
 }
