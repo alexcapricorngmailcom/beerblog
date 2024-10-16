@@ -5,7 +5,7 @@ import EmptyBeerElement from "./EmptyBeerElement";
 export default function BeerTable(props: propsBeerElementType) {
   return (
     <div className="container flex justify-center items-center flex-wrap gap-3 
-    mx-auto xl:w-full lg:w-[55%] md:w-[65%]">
+    mx-auto myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
       {/* 1 column */}
       <div className="flex flex-col gap-3">
         {/* 1 column title */}
@@ -750,12 +750,14 @@ export default function BeerTable(props: propsBeerElementType) {
           borderColor='border-europeanLagerBorder'
         />
       </div>
-
+    
       {/* 14 column */}
       <div className="flex flex-col gap-3">
         {/* 14 column title */}
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
+        <div className="flex flex-col gap-3">
+          <EmptyBeerElement/>
+          <EmptyBeerElement/>
+        </div>
         <BeerColumnTitle 
           title='BOCK'
           titletextColor='text-bockLagerBorder'          
