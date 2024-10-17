@@ -1,10 +1,9 @@
 import BeerColumnTitle from "./BeerColumnTitle";
 import BeerElement from "./BeerElement";
-import EmptyBeerElement from "./EmptyBeerElement";
 
-export default function BeerTable(props: propsBeerElementType) {
+export default function BeerTable() {
   return (
-    <div className="container flex justify-center items-center flex-wrap gap-3 
+    <div className="container flex justify-center items-end flex-wrap gap-3 
     mx-auto myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
       {/* 1 column */}
       <div className="flex flex-col gap-3">
@@ -252,8 +251,6 @@ export default function BeerTable(props: propsBeerElementType) {
       {/* 4 column */}
       <div className="flex flex-col gap-3">
         {/* 4 column title */}
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
         <BeerColumnTitle 
           title='PALE ALE'
           titletextColor='text-paleAleBorder'          
@@ -311,9 +308,6 @@ export default function BeerTable(props: propsBeerElementType) {
       {/* 5 column */}
       <div className="flex flex-col gap-3">
         {/* 5 column title */}
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
         <BeerColumnTitle 
           title='ENGLISH BITTER'
           titletextColor='text-englishBitterBorder'          
@@ -359,9 +353,6 @@ export default function BeerTable(props: propsBeerElementType) {
       {/* 6 column */}
       <div className="flex flex-col gap-3">
         {/* 6 column title */}
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
         <BeerColumnTitle 
           title='SCOTISH ALE'
           titletextColor='text-scotishAleBorder'          
@@ -407,9 +398,6 @@ export default function BeerTable(props: propsBeerElementType) {
       {/* 7 column */}
       <div className="flex flex-col gap-3">
         {/* 7 column title */}
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
         <BeerColumnTitle 
           title='BROWN ALE'
           titletextColor='text-brownAleBorder'          
@@ -455,10 +443,6 @@ export default function BeerTable(props: propsBeerElementType) {
       {/* 8 column */}
       <div className="flex flex-col gap-3">
         {/* 8 column title */}
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
         <BeerColumnTitle 
           title='PORTER'
           titletextColor='text-porterBorder'          
@@ -492,9 +476,6 @@ export default function BeerTable(props: propsBeerElementType) {
       {/* 9 column */}
       <div className="flex flex-col gap-3">
         {/* 9 column title */}
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
         <BeerColumnTitle 
           title='STOUT'
           titletextColor='text-lightStoutBorder'          
@@ -540,9 +521,6 @@ export default function BeerTable(props: propsBeerElementType) {
       {/* 10 column */}
       <div className="flex flex-col gap-3">
         {/* 10 column title */}
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
         <BeerColumnTitle 
           title='STOUT'
           titletextColor='text-heavyStoutBorder'          
@@ -588,9 +566,6 @@ export default function BeerTable(props: propsBeerElementType) {
       {/* 11 column */}
       <div className="flex flex-col gap-3">
         {/* 11 column title */}
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
         <BeerColumnTitle 
           title='PILSNER'
           titletextColor='text-pilsnerBorder'          
@@ -636,8 +611,6 @@ export default function BeerTable(props: propsBeerElementType) {
       {/* 12 column */}
       <div className="flex flex-col gap-3">
         {/* 12 column title */}
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
         <BeerColumnTitle 
           title='AMERICAN LAGER'
           titletextColor='text-americanLagerBorder'          
@@ -695,8 +668,6 @@ export default function BeerTable(props: propsBeerElementType) {
       {/* 13 column */}
       <div className="flex flex-col gap-3">
         {/* 13 column title */}
-        <EmptyBeerElement/>
-        <EmptyBeerElement/>
         <BeerColumnTitle 
           title='EUROPEAN LAGER'
           titletextColor='text-europeanLagerBorder'          
@@ -754,10 +725,6 @@ export default function BeerTable(props: propsBeerElementType) {
       {/* 14 column */}
       <div className="flex flex-col gap-3">
         {/* 14 column title */}
-        <div className="flex flex-col gap-3">
-          <EmptyBeerElement/>
-          <EmptyBeerElement/>
-        </div>
         <BeerColumnTitle 
           title='BOCK'
           titletextColor='text-bockLagerBorder'          

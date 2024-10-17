@@ -1,4 +1,4 @@
-import BeerTable from './shared/components/BeerTable/BeerTable';
+import BeerTable from './shared/components/BeerTable';
 import FlowbiteCarousel from './shared/components/FlowbiteCarousel/FlowbiteCarousel';
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
         </div>
       </section>
       <section className='mt-10'>
-        <BeerTable initialDensity={''} finalDensity={''} name={''} ABV={''} IBU={''} SRM={''} bgColor={''} borderColor={''}/>
+        <BeerTable/>
       </section>
       
     </main>
