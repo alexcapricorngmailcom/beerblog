@@ -1,4 +1,3 @@
-import BeerColumnTitle from "./BeerColumnTitle";
 import BeerElement from "./BeerElement";
 
 export default function BeerFooter() {
@@ -13,8 +12,8 @@ export default function BeerFooter() {
           ABV: '4.8-5.2%',
           IBU: '20-30',
           SRM: '4-5',
-          bgColor: 'bg-porter',
-          borderColor: 'border-porterBorder',
+          bgColor: 'bg-brownAle',
+          borderColor: 'border-brownAleBorder',
         },
         {
           number: '61',
@@ -24,8 +23,8 @@ export default function BeerFooter() {
           ABV: '4.6-5.1%',
           IBU: '25-48',
           SRM: '11-19',
-          bgColor: 'bg-porter',
-          borderColor: 'border-porterBorder',
+          bgColor: 'bg-brownAle',
+          borderColor: 'border-brownAleBorder',
         },
       ]   
     },
@@ -39,8 +38,8 @@ export default function BeerFooter() {
           ABV: '4.5-8.0%',
           IBU: '20-30',
           SRM: '5-12',
-          bgColor: 'bg-porter',
-          borderColor: 'border-porterBorder',
+          bgColor: 'bg-scotishAle',
+          borderColor: 'border-scotishAleBorder',
         },
       ]   
     },
@@ -54,8 +53,8 @@ export default function BeerFooter() {
           ABV: '5.1-6.5%',
           IBU: '18-30',
           SRM: '7-12',
-          bgColor: 'bg-porter',
-          borderColor: 'border-porterBorder',
+          bgColor: 'bg-pilsner',
+          borderColor: 'border-pilsnerBorder',
         },
         {
           number: '62',
@@ -65,8 +64,86 @@ export default function BeerFooter() {
           ABV: '4.6-5.5%',
           IBU: '20-28',
           SRM: '8-14',
+          bgColor: 'bg-pilsner',
+          borderColor: 'border-pilsnerBorder',
+        },
+      ]   
+    },
+    {            
+      elements: [
+        {
+          number: '58',
+          initialDensity: '1.044-1.055',
+          finalDensity: '1.007-1.010',
+          name: 'Cream Ale',
+          ABV: '4.5-6.0%',
+          IBU: '10-35',
+          SRM: '8-14',
+          bgColor: 'bg-lambicSour',
+          borderColor: 'border-lambicSourBorder',
+        },
+        {
+          number: '63',
+          initialDensity: '1.040-1.055',
+          finalDensity: '1.012-1.018',
+          name: 'Steam Beer',
+          ABV: '3.6-5.0%',
+          IBU: '35-45',
+          SRM: '8-17',
+          bgColor: 'bg-lambicSour',
+          borderColor: 'border-lambicSourBorder',
+        },
+      ]   
+    },
+    {            
+      elements: [
+        {
+          number: '59',
+          initialDensity: '1.050-1.055',
+          finalDensity: '1.012-1.016',
+          name: 'Smoked Beer',
+          ABV: '5.0-5.5%',
+          IBU: '20-30',
+          SRM: '12-17',
           bgColor: 'bg-porter',
           borderColor: 'border-porterBorder',
+        },
+        {
+          number: '64',
+          initialDensity: '1.085-1.120',
+          finalDensity: '1.024-1.032',
+          name: 'Barleywine',
+          ABV: '8.4-12.2%',
+          IBU: '50-100',
+          SRM: '14-22',
+          bgColor: 'bg-porter',
+          borderColor: 'border-porterBorder',
+        },
+      ]   
+    },
+    {            
+      elements: [
+        {
+          number: '60',
+          initialDensity: '1.060-1.090',
+          finalDensity: '1.015-1.022',
+          name: 'English Old Ale',
+          ABV: '6.1-8.5%',
+          IBU: '30-40',
+          SRM: '12-16',
+          bgColor: 'bg-paleAle',
+          borderColor: 'border-paleAleBorder',
+        },
+        {
+          number: '65',
+          initialDensity: '1.072-1.085',
+          finalDensity: '1.016-1.028',
+          name: 'Strong Scotch Ale',
+          ABV: '6.0-9.0%',
+          IBU: '20-40',
+          SRM: '10-40+',
+          bgColor: 'bg-paleAle',
+          borderColor: 'border-paleAleBorder',
         },
       ]   
     },
@@ -74,26 +151,46 @@ export default function BeerFooter() {
 
 
   return (
-    <div className="container flex justify-center items-start flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
-      {beerFooterElements.map(el => {
-        return  <div className="flex flex-col gap-3">
-        {el.elements.map(subElement => {
-          return <BeerElement
-          number={subElement.number}
-          initialDensity={subElement.initialDensity}
-          finalDensity={subElement.finalDensity}
-          name={subElement.name}
-          ABV={subElement.ABV}
-          IBU={subElement.IBU}
-          SRM={subElement.SRM}
-          bgColor={subElement.bgColor}
-          borderColor={subElement.borderColor}
-        />
+
+    <div className="container flex justify-center items-center flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
+      <div className="flex justify-center items-start gap-3">
+        {beerFooterElements.map(el => {
+          return  <div className="flex flex-col gap-3">
+          {el.elements.map(subElement => {
+            return <BeerElement
+            number={subElement.number}
+            initialDensity={subElement.initialDensity}
+            finalDensity={subElement.finalDensity}
+            name={subElement.name}
+            ABV={subElement.ABV}
+            IBU={subElement.IBU}
+            SRM={subElement.SRM}
+            bgColor={subElement.bgColor}
+            borderColor={subElement.borderColor}
+          />
+          })}
+        </div> 
         })}
-
-      </div> 
-      })}
-
+      </div>
+      <div className="flex justify-center items-start gap-3">
+        {beerFooterElements.map(el => {
+          return  <div className="flex flex-col gap-3">
+          {el.elements.map(subElement => {
+            return <BeerElement
+            number={subElement.number}
+            initialDensity={subElement.initialDensity}
+            finalDensity={subElement.finalDensity}
+            name={subElement.name}
+            ABV={subElement.ABV}
+            IBU={subElement.IBU}
+            SRM={subElement.SRM}
+            bgColor={subElement.bgColor}
+            borderColor={subElement.borderColor}
+          />
+          })}
+        </div> 
+        })}
+      </div>
       
 
     </div>
