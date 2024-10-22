@@ -691,13 +691,13 @@ export default function BeerTable() {
     <div className="container flex justify-center items-end flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
       {beerElements.map(el => {
         return  <div className="flex flex-col gap-3">
-        <BeerColumnTitle 
+        <BeerColumnTitle key={el.title}
           title={el.title}
           titletextColor={el.titletextColor}          
         />
         
         {el.elements.map(subElement => {
-          return <BeerElement
+          return <BeerElement key={subElement.number}
           number={subElement.number}
           initialDensity={subElement.initialDensity}
           finalDensity={subElement.finalDensity}

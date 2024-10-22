@@ -152,8 +152,8 @@ export default function BeerFooter() {
 
   return (
 
-    <div className="container flex justify-center items-center flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
-      <div className="flex justify-center items-start gap-3">
+    <div className="container flex justify-center items-center flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[100%] sm:w-[45%]">
+      <div className="flex myxl:justify-end items-start flex-wrap gap-3 myxl:w-[49.5%] md:w-[100%] s:justify-center">
         {beerFooterElements.map(el => {
           return  <div className="flex flex-col gap-3">
           {el.elements.map(subElement => {
@@ -172,7 +172,7 @@ export default function BeerFooter() {
         </div> 
         })}
       </div>
-      <div className="flex justify-center items-start gap-3">
+      <div className="flex myxl:justify-start items-start flex-wrap gap-3 myxl:w-[49.5%] md:w-[100%] s:justify-center">
         {beerFooterElements.map(el => {
           return  <div className="flex flex-col gap-3">
           {el.elements.map(subElement => {
