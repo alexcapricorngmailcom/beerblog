@@ -151,26 +151,43 @@ export default function BeerFooter() {
 
 
   return (
-
     <div className="container flex justify-center items-center flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[100%] sm:w-[45%]">
-      <div className="flex myxl:justify-end items-start flex-wrap gap-3 myxl:w-[49.5%] md:w-[100%] s:justify-center">
-        {beerFooterElements.map(el => {
-          return  <div className="flex flex-col gap-3">
-          {el.elements.map(subElement => {
-            return <BeerElement
-            number={subElement.number}
-            initialDensity={subElement.initialDensity}
-            finalDensity={subElement.finalDensity}
-            name={subElement.name}
-            ABV={subElement.ABV}
-            IBU={subElement.IBU}
-            SRM={subElement.SRM}
-            bgColor={subElement.bgColor}
-            borderColor={subElement.borderColor}
+      <div className="flex myxl:justify-center items-center flex-wrap gap-3 myxl:w-[49.5%] md:w-[100%] s:justify-center">
+        <div className="flex justify-center myxl:w-[49%]">
+          <BeerElement 
+            number={"1"} 
+            initialDensity={""} 
+            finalDensity={""} 
+            name={""} 
+            ABV={""} 
+            IBU={""} 
+            SRM={""} 
+            bgColor={""} 
+            borderColor={""}
           />
-          })}
-        </div> 
-        })}
+          <div>
+            <p>1 - number</p>
+            <p>1.055-1.026 - initialDensity</p>
+            <p>1.055-1.026 - finalDensity</p>
+            <p>Beer - name</p>
+            <p>2-6% - ABV</p>
+            <p>2-40 - IBU</p>
+            <p>2-40 - SRM</p>
+          </div>
+        </div>
+        <div className="flex justify-center myxl:w-[49%]">
+          <BeerElement 
+            number={"1"} 
+            initialDensity={""} 
+            finalDensity={""} 
+            name={""} 
+            ABV={""} 
+            IBU={""} 
+            SRM={""} 
+            bgColor={""} 
+            borderColor={""}
+          />
+        </div>
       </div>
       <div className="flex myxl:justify-start items-start flex-wrap gap-3 myxl:w-[49.5%] md:w-[100%] s:justify-center">
         {beerFooterElements.map(el => {
