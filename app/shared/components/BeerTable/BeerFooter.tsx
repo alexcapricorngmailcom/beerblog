@@ -153,21 +153,21 @@ export default function BeerFooter() {
   return (
     <div className="container flex justify-center items-center flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[100%] sm:w-[45%]">
       <div className="flex myxl:justify-center items-center flex-wrap gap-3 myxl:w-[49.5%] md:w-[100%] s:justify-center">
-        <div className="flex justify-center myxl:w-[49%]">
-          <BeerElement 
+        <div className="flex justify-center items-center gap-3 myxl:w-[49%]">
+          <BeerElement
             number={"1"} 
-            initialDensity={""} 
-            finalDensity={""} 
-            name={""} 
-            ABV={""} 
-            IBU={""} 
-            SRM={""} 
-            bgColor={""} 
-            borderColor={""}
+            initialDensity={"1.026-1.036"} 
+            finalDensity={"1.006-1.009"} 
+            name={"Berliner Weisse"} 
+            ABV={"2.5-3.6%"} 
+            IBU={"3-12"} 
+            SRM={"2-4"} 
+            bgColor={"bg-wheatBeer"} 
+            borderColor={"border-wheatBeerBorder"}
           />
-          <div>
+          <div className="text-[12px] leading-[16px] font-bold">
             <p>1 - number</p>
-            <p>1.055-1.026 - initialDensity</p>
+            <p >1.055-1.026 - initialDensity</p>
             <p>1.055-1.026 - finalDensity</p>
             <p>Beer - name</p>
             <p>2-6% - ABV</p>
@@ -175,18 +175,46 @@ export default function BeerFooter() {
             <p>2-40 - SRM</p>
           </div>
         </div>
-        <div className="flex justify-center myxl:w-[49%]">
-          <BeerElement 
-            number={"1"} 
-            initialDensity={""} 
-            finalDensity={""} 
-            name={""} 
-            ABV={""} 
-            IBU={""} 
-            SRM={""} 
-            bgColor={""} 
-            borderColor={""}
-          />
+        <div className="flex flex-col justify-center items-center myxl:w-[49%] text-[12px] font-bold">
+            <div>SRM rating</div>
+            <div className="flex">
+              <div className="flex flex-col">
+                <div className="w-5 h-5 bg-black"></div>
+                <div className="w-5 h-5 text-center">0</div>
+              </div>
+              <div className="flex flex-col ml-1">
+                <div className="w-5 h-5 bg-black"></div>
+                <div className="w-5 h-5 text-center">1</div>
+              </div>
+              <div className="flex flex-col ml-1">
+                <div className="w-5 h-5 bg-black"></div>
+                <div className="w-5 h-5 text-center">2</div>
+              </div>
+              <div className="flex flex-col ml-1">
+                <div className="w-5 h-5 bg-black"></div>
+                <div className="w-5 h-5 text-center">5</div>
+              </div>
+              <div className="flex flex-col ml-1">
+                <div className="w-5 h-5 bg-black"></div>
+                <div className="w-5 h-5 text-center">10</div>
+              </div>
+              <div className="flex flex-col ml-1">
+                <div className="w-5 h-5 bg-black"></div>
+                <div className="w-5 h-5 text-center">18</div>
+              </div>
+              <div className="flex flex-col ml-1">
+                <div className="w-5 h-5 bg-black"></div>
+                <div className="w-5 h-5 text-center">20</div>
+              </div>
+              <div className="flex flex-col ml-1">
+                <div className="w-5 h-5 bg-black"></div>
+                <div className="w-5 h-5 text-center">26</div>
+              </div>
+              <div className="flex flex-col ml-1">
+                <div className="w-5 h-5 bg-black"></div>
+                <div className="w-5 h-5 text-center">40+</div>
+              </div>
+            </div>
         </div>
       </div>
       <div className="flex myxl:justify-start items-start flex-wrap gap-3 myxl:w-[49.5%] md:w-[100%] s:justify-center">
