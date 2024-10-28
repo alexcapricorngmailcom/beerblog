@@ -41,6 +41,15 @@ const config: Config = {
         'bockLager': '#baa799',
         'bockLagerBorder': '#5f4d48',
         
+        'srm0': '#f8f3b2',
+        'srm1': '#f2d77e',
+        'srm2': '#f4b54c',
+        'srm5': '#de8931',
+        'srm10': '#d87d23',
+        'srm18': '#c65311',
+        'srm20': '#901911',
+        'srm26': '#600b0d',
+        'srm40+': '#32040e',
         
       },
       height: {

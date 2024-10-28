@@ -1,4 +1,5 @@
-import BeerElement from "./BeerElement";
+import BeerElement from "../BeerElement";
+import SRM from "./SRM";
 
 export default function BeerFooter() {
   const beerFooterElements = [
@@ -149,9 +150,47 @@ export default function BeerFooter() {
     },
   ];
 
+  const srmRating = [
+    {
+      number: '0',
+      bgColor: 'bg-srm0',
+    },
+    {
+      number: '1',
+      bgColor: 'bg-srm1',
+    },
+    {
+      number: '2',
+      bgColor: 'bg-srm2',
+    },
+    {
+      number: '5',
+      bgColor: 'bg-srm5',
+    },
+    {
+      number: '10',
+      bgColor: 'bg-srm10',
+    },
+    {
+      number: '18',
+      bgColor: 'bg-srm18',
+    },
+    {
+      number: '20',
+      bgColor: 'bg-srm20',
+    },
+    {
+      number: '26',
+      bgColor: 'bg-srm26',
+    },
+    {
+      number: '40+',
+      bgColor: 'bg-srm40+',
+    },
+  ]
 
   return (
-    <div className="container flex justify-center items-center flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[100%] sm:w-[45%]">
+    <div className="container flex justify-center items-center flex-wrap gap-3 mx-auto mt-10 myxl:w-full xl:w-[55%] md:w-[100%] sm:w-[45%]">
       <div className="flex myxl:justify-center items-center flex-wrap gap-3 myxl:w-[49.5%] md:w-[100%] s:justify-center">
         <div className="flex justify-center items-center gap-3 myxl:w-[49%]">
           <BeerElement
@@ -167,53 +206,24 @@ export default function BeerFooter() {
           />
           <div className="text-[12px] leading-[16px] font-bold">
             <p>1 - number</p>
-            <p >1.055-1.026 - initialDensity</p>
-            <p>1.055-1.026 - finalDensity</p>
-            <p>Beer - name</p>
-            <p>2-6% - ABV</p>
-            <p>2-40 - IBU</p>
-            <p>2-40 - SRM</p>
+            <p >1.026-1.036 - initialDensity</p>
+            <p>1.006-1.00- finalDensity</p>
+            <p>Berliner Weisse - name</p>
+            <p>2.5-3.6% - ABV</p>
+            <p>3-12 - IBU</p>
+            <p>2-4 - SRM rating</p>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center myxl:w-[49%] text-[12px] font-bold">
-            <div>SRM rating</div>
-            <div className="flex">
-              <div className="flex flex-col">
-                <div className="w-5 h-5 bg-black"></div>
-                <div className="w-5 h-5 text-center">0</div>
-              </div>
-              <div className="flex flex-col ml-1">
-                <div className="w-5 h-5 bg-black"></div>
-                <div className="w-5 h-5 text-center">1</div>
-              </div>
-              <div className="flex flex-col ml-1">
-                <div className="w-5 h-5 bg-black"></div>
-                <div className="w-5 h-5 text-center">2</div>
-              </div>
-              <div className="flex flex-col ml-1">
-                <div className="w-5 h-5 bg-black"></div>
-                <div className="w-5 h-5 text-center">5</div>
-              </div>
-              <div className="flex flex-col ml-1">
-                <div className="w-5 h-5 bg-black"></div>
-                <div className="w-5 h-5 text-center">10</div>
-              </div>
-              <div className="flex flex-col ml-1">
-                <div className="w-5 h-5 bg-black"></div>
-                <div className="w-5 h-5 text-center">18</div>
-              </div>
-              <div className="flex flex-col ml-1">
-                <div className="w-5 h-5 bg-black"></div>
-                <div className="w-5 h-5 text-center">20</div>
-              </div>
-              <div className="flex flex-col ml-1">
-                <div className="w-5 h-5 bg-black"></div>
-                <div className="w-5 h-5 text-center">26</div>
-              </div>
-              <div className="flex flex-col ml-1">
-                <div className="w-5 h-5 bg-black"></div>
-                <div className="w-5 h-5 text-center">40+</div>
-              </div>
+            <h3>SRM rating</h3>
+            <div className="flex [&>div+div]:ml-1">
+              {srmRating.map(el => {
+                return <SRM 
+                number={el.number} 
+                bgColor={el.bgColor}
+              />
+              })}
+              
             </div>
         </div>
       </div>
