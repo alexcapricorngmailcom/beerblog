@@ -1,3 +1,4 @@
+"use client"
 import BeerElement from "../BeerElement";
 import SRM from "./SRM";
 
@@ -189,21 +190,29 @@ export default function BeerFooter() {
     },
   ]
 
+  function handleClick() {
+    alert('aa');
+  }
+
   return (
     <div className="container flex justify-center items-center flex-wrap gap-3 mx-auto mt-10 myxl:w-full xl:w-[55%] md:w-[100%] sm:w-[45%]">
       <div className="flex myxl:justify-center items-center flex-wrap gap-3 myxl:w-[49.5%] md:w-[100%] s:justify-center">
         <div className="flex justify-center items-center gap-3 myxl:w-[49%]">
-          <BeerElement
-            number={"1"} 
-            initialDensity={"1.026-1.036"} 
-            finalDensity={"1.006-1.009"} 
-            name={"Berliner Weisse"} 
-            ABV={"2.5-3.6%"} 
-            IBU={"3-12"} 
-            SRM={"2-4"} 
-            bgColor={"bg-wheatBeer"} 
-            borderColor={"border-wheatBeerBorder"}
-          />
+          <div className={`flex items-center relative w-20 h-20 leading-none font-semibold bg-wheatBeer border-2 border-wheatBeerBorder cursor-default`}>
+            <p className="absolute top-0 left-0 w-5 h-5 text-[12px] leading-[1.2rem] text-center text-white bg-black">1</p>
+            <div className="absolute top-0 right-0 pt-[2px] pr-[2px] text-[9px]">
+              <p>1.026-1.036</p>
+              <p>1.006-1.009</p>
+            </div>
+            <p className={`w-full text-[14px] font-bold leading-[1rem] text-center`}>Berliner Weisse</p>
+            <div className="absolute bottom-0 left-0 pb-[2px] pl-[2px] text-[9px]">
+              <p>2.5-3.6%</p>
+              <p>3-12</p>
+            </div>
+            <div className="absolute bottom-0 right-0 pb-[2px] pr-[2px] text-[9px]">
+              <p>2-4</p>
+            </div>
+          </div>
           <div className="text-[12px] leading-[16px] font-bold">
             <p>1 - number</p>
             <p >1.026-1.036 - initialDensity</p>
@@ -232,6 +241,7 @@ export default function BeerFooter() {
           return  <div className="flex flex-col gap-3">
           {el.elements.map(subElement => {
             return <BeerElement
+            onShowElementInfo={handleClick}
             number={subElement.number}
             initialDensity={subElement.initialDensity}
             finalDensity={subElement.finalDensity}

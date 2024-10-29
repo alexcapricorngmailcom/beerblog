@@ -1,3 +1,6 @@
+"use client"
+import { useState } from "react";
+import DialogModal from "../DialogModal/DialogModal";
 import BeerColumnTitle from "./BeerColumnTitle";
 import BeerElement from "./BeerElement";
 
@@ -686,11 +689,14 @@ export default function BeerTable() {
     },
   ];
 
+  const [open, setOpen] = useState(false)
+
   function handleClick() {
-    alert('aa');
+    setOpen(true);
   }
 
   return (
+
     <div className="container flex justify-center items-end flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
       {beerElements.map(el => {
         return  <div className="flex flex-col gap-3">
@@ -701,7 +707,7 @@ export default function BeerTable() {
         
         {el.elements.map(subElement => {
           return <BeerElement key={subElement.number}
-          onClick={handleClick}
+          onShowElementInfo={handleClick}
           number={subElement.number}
           initialDensity={subElement.initialDensity}
           finalDensity={subElement.finalDensity}
@@ -713,7 +719,9 @@ export default function BeerTable() {
           borderColor={subElement.borderColor}
         />
         })}
-
+        <DialogModal
+          dialogClosed={open}
+        />
       </div> 
       })}
 
@@ -722,3 +730,4 @@ export default function BeerTable() {
     </div>
   );
 }
+
