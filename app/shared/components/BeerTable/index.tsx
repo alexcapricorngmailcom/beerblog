@@ -7,6 +7,7 @@ import BeerElement from "./BeerElement";
 export default function BeerTable() {
   const beerElements = [
     {
+      id: 'a7f3',
       title: 'WHEAT BEER',
       titletextColor: 'text-wheatBeerBorder',
       elements: [
@@ -80,6 +81,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 'k9d2',
       title: 'LAMBIC & SOUR',
       titletextColor: 'text-lambicSourBorder',
       elements: [
@@ -153,6 +155,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 'p6q1',
       title: 'BELGIAN ALE',
       titletextColor: 'text-belgianAleBorder',
       elements: [
@@ -226,6 +229,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 'z3h7',
       title: 'PALE ALE',
       titletextColor: 'text-paleAleBorder',      
       elements: [
@@ -276,6 +280,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 'y2l4',
       title: 'ENGLISH BITTER',
       titletextColor: 'text-englishBitterBorder',    
       elements: [
@@ -315,6 +320,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 't8v5',
       title: 'SCOTISH ALE',
       titletextColor: 'text-scotishAleBorder',          
       elements: [
@@ -354,6 +360,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 'j1m6',
       title: 'BROWN ALE',
       titletextColor: 'text-brownAleBorder',              
       elements: [
@@ -393,6 +400,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 'r4c9',
       title: 'PORTER',
       titletextColor: 'text-porterBorder',             
       elements: [
@@ -421,6 +429,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 'f3b8',
       title: 'STOUT',
       titletextColor: 'text-lightStoutBorder',                   
       elements: [
@@ -460,6 +469,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 'l2x7',
       title: 'STOUT',
       titletextColor: 'text-heavyStoutBorder',                  
       elements: [
@@ -499,6 +509,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 'n5g2',
       title: 'PILSNER',
       titletextColor: 'text-pilsnerBorder',               
       elements: [
@@ -538,6 +549,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 'h4y3',
       title: 'AMERICAN LAGER',
       titletextColor: 'text-americanLagerBorder', 
       elements: [
@@ -588,6 +600,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 'm9k6',
       title: 'EUROPEAN LAGER',
       titletextColor: 'text-europeanLagerBorder',
       elements: [
@@ -638,6 +651,7 @@ export default function BeerTable() {
       ]   
     },
     {
+      id: 'd7q8',
       title: 'BOCK',
       titletextColor: 'text-bockLagerBorder',
       elements: [
@@ -699,8 +713,8 @@ export default function BeerTable() {
 
     <div className="container flex justify-center items-end flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
       {beerElements.map(el => {
-        return  <div className="flex flex-col gap-3">
-        <BeerColumnTitle key={el.title}
+        return  <div className="flex flex-col gap-3" key={el.id}>
+        <BeerColumnTitle 
           title={el.title}
           titletextColor={el.titletextColor}          
         />
@@ -720,13 +734,11 @@ export default function BeerTable() {
         />
         })}
         <DialogModal
-          dialogClosed={open}
+          isOpen={open}
+          setOpen={setOpen}
         />
       </div> 
       })}
-
-      
-
     </div>
   );
 }

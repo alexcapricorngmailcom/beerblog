@@ -4,7 +4,7 @@ import SRM from "./SRM";
 
 export default function BeerFooter() {
   const beerFooterElements = [
-    {            
+    { id: 'b2n7',           
       elements: [
         {
           number: '55',
@@ -30,7 +30,7 @@ export default function BeerFooter() {
         },
       ]   
     },
-    {            
+    { id: 'w5j3',
       elements: [
         {
           number: '56',
@@ -45,7 +45,7 @@ export default function BeerFooter() {
         },
       ]   
     },
-    {            
+    { id: 'c8t4',       
       elements: [
         {
           number: '57',
@@ -71,7 +71,7 @@ export default function BeerFooter() {
         },
       ]   
     },
-    {            
+    { id: 'q9z6',  
       elements: [
         {
           number: '58',
@@ -97,7 +97,7 @@ export default function BeerFooter() {
         },
       ]   
     },
-    {            
+    { id: 'u3h1',
       elements: [
         {
           number: '59',
@@ -123,7 +123,7 @@ export default function BeerFooter() {
         },
       ]   
     },
-    {            
+    { id: 's4p9',
       elements: [
         {
           number: '60',
@@ -228,6 +228,7 @@ export default function BeerFooter() {
             <div className="flex [&>div+div]:ml-1">
               {srmRating.map(el => {
                 return <SRM 
+                key={el.number}
                 number={el.number} 
                 bgColor={el.bgColor}
               />
@@ -238,9 +239,10 @@ export default function BeerFooter() {
       </div>
       <div className="flex myxl:justify-start items-start flex-wrap gap-3 myxl:w-[49.5%] md:w-[100%] s:justify-center">
         {beerFooterElements.map(el => {
-          return  <div className="flex flex-col gap-3">
+          return  <div className="flex flex-col gap-3" key={el.id}>
           {el.elements.map(subElement => {
             return <BeerElement
+            key={subElement.number}
             onShowElementInfo={handleClick}
             number={subElement.number}
             initialDensity={subElement.initialDensity}
