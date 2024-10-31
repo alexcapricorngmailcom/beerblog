@@ -22,7 +22,7 @@ export default function DialogModal(props:PropsDialogModalType) {
               <div className="sm:flex sm:items-start">
                 <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                   <DialogTitle as="h3" className="text-base font-semibold text-gray-900">
-                    Deactivate account
+                    {props.text}
                   </DialogTitle>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
@@ -58,6 +58,7 @@ export default function DialogModal(props:PropsDialogModalType) {
 }
 
 type PropsDialogModalType = {
-  isOpen: boolean,
-  setOpen: Dispatch<SetStateAction<boolean>>
+  isOpen: boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+  text: string;
 }

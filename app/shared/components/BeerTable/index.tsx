@@ -703,10 +703,13 @@ export default function BeerTable() {
     },
   ];
 
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [text, setText] = useState('');
 
-  function handleClick() {
+
+  function handleClick(e:any) {
     setOpen(true);
+    setText(e);
   }
 
   return (
@@ -736,6 +739,7 @@ export default function BeerTable() {
         <DialogModal
           isOpen={open}
           setOpen={setOpen}
+          text={text}
         />
       </div> 
       })}
