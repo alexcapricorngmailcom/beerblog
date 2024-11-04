@@ -893,7 +893,7 @@ export default function BeerTable() {
   ]
 
   const [open, setOpen] = useState(false);
-  const [elementDialogModalInfo, setElementDialogModalInfo] = useState(null);
+  const [elementDialogModalInfo, setElementDialogModalInfo] = useState<SubElementType | null>(null);
 
 
   function handleClick(data:SubElementType | null) {
@@ -917,11 +917,13 @@ export default function BeerTable() {
           subElement={subElement}
         />
         })}
-        <DialogModal
-          isOpen={open}
-          setOpen={setOpen}
-          elementDialogModalInfo={elementDialogModalInfo}
-        />
+        {elementDialogModalInfo &&
+          <DialogModal
+            isOpen={open}
+            setOpen={setOpen}
+            elementDialogModalInfo={elementDialogModalInfo}
+          />
+        }
       </div> 
       })}
     </div>
