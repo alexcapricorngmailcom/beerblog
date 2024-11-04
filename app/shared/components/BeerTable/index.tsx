@@ -23,6 +23,8 @@ export default function BeerTable() {
           SRM: '2-4',
           bgColor: 'bg-wheatBeer',
           borderColor: 'border-wheatBeerBorder',
+          link: 'https://en.wikipedia.org/wiki/Berliner_Weisse',
+          example: 'e.g.: Schulthesis Berliner Weisse, Berliner Kindl Weisse',
         },
         {
           number: '4',
@@ -34,6 +36,8 @@ export default function BeerTable() {
           SRM: '2-4',
           bgColor: 'bg-wheatBeer',
           borderColor: 'border-wheatBeerBorder',
+          link: 'https://en.wikipedia.org/wiki/Wheat_beer#Witbier',
+          example: 'e.g.: Celis White, Hoegaarden White, Blanche de Bruges',
         },
         {
           number: '7',
@@ -45,6 +49,8 @@ export default function BeerTable() {
           SRM: '2-8',
           bgColor: 'bg-wheatBeer',
           borderColor: 'border-wheatBeerBorder',
+          link: 'https://beers.su/beers/american-pale-wheat-ale',
+          example: 'e.g.: Samuel Adams Summer Ale, Catamount American Wheat',
         },
         {
           number: '14',
@@ -56,6 +62,8 @@ export default function BeerTable() {
           SRM: '3-9',
           bgColor: 'bg-wheatBeer',
           borderColor: 'border-wheatBeerBorder',
+          link: 'https://en.wikipedia.org/wiki/Weizenbier',
+          example: 'e.g.: Erdinger Weissbier. Pyramid wheaten ale, Julius Echter Weizenbier',
         },
         {
           number: '27',
@@ -67,6 +75,8 @@ export default function BeerTable() {
           SRM: '17-23',
           bgColor: 'bg-wheatBeer',
           borderColor: 'border-wheatBeerBorder',
+          link: 'https://en.wikipedia.org/wiki/Dunkelweizen',
+          example: 'e.g.: Franziskaner Dunkel Weizen, Schneider Dunkel Weiss',
         },
         {
           number: '41',
@@ -78,8 +88,9 @@ export default function BeerTable() {
           SRM: '10-30',
           bgColor: 'bg-wheatBeer',
           borderColor: 'border-wheatBeerBorder',
+          link: 'https://en.wikipedia.org/wiki/Weizenbock',
+          example: 'e.g.: Schneider Aventinus, Pyramid Weizenbock',
         }
-
       ]   
     },
     {
@@ -97,6 +108,8 @@ export default function BeerTable() {
           SRM: '4-15',
           bgColor: 'bg-lambicSour',
           borderColor: 'border-lambicSourBorder',
+          link: 'https://en.wikipedia.org/wiki/Lambic',
+          example: 'e.g.: Grand Cru Cantillon Bruocsella 1900, Boon, De Neve',
         },
         {
           number: '5',
@@ -108,6 +121,8 @@ export default function BeerTable() {
           SRM: '4-15',
           bgColor: 'bg-lambicSour',
           borderColor: 'border-lambicSourBorder',
+          link: 'https://en.wikipedia.org/wiki/Gueuze',
+          example: 'e.g.: Lindeman`s Gueuze Lambic, Belle-Vue Gueuze, Boon, Cantillon, Hanssens'
         },
         {
           number: '8',
@@ -119,6 +134,8 @@ export default function BeerTable() {
           SRM: '4-15',
           bgColor: 'bg-lambicSour',
           borderColor: 'border-lambicSourBorder',
+          link: 'https://en.wikipedia.org/wiki/Lambic#Faro',
+          example: 'e.g.: Lindeman`s',
         },
         {
           number: '15',
@@ -130,6 +147,8 @@ export default function BeerTable() {
           SRM: 'N/A',
           bgColor: 'bg-lambicSour',
           borderColor: 'border-lambicSourBorder',
+          link: 'https://en.wikipedia.org/wiki/Lambic#Fruit',
+          example: 'e.g.: Belle-Vue Kriek, Lindeman`s Framboise Lambic',
         },
         {
           number: '28',
@@ -141,6 +160,8 @@ export default function BeerTable() {
           SRM: '10-16',
           bgColor: 'bg-lambicSour',
           borderColor: 'border-lambicSourBorder',
+          link: 'https://en.wikipedia.org/wiki/Flanders_red_ale',
+          example: 'e.g.: Rodenbach, Petrus, Bourgone des Flanders, Vlaamse Bourgogne',
         },
         {
           number: '42',
@@ -152,8 +173,9 @@ export default function BeerTable() {
           SRM: '12-20',
           bgColor: 'bg-lambicSour',
           borderColor: 'border-lambicSourBorder',
+          link: 'https://en.wikipedia.org/wiki/Oud_bruin',
+          example: 'e.g.: Liefman`s Goudenband, Felix, Roman',
         }
-
       ]   
     },
     {
@@ -171,6 +193,8 @@ export default function BeerTable() {
           SRM: '4-6',
           bgColor: 'bg-belgianAle',
           borderColor: 'border-belgianAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Belgian_ale#Blonde_or_golden_ale',
+          example: 'e.g.: Duvel, Lucifer, La Chouffe, Moinette, Celis Grand Cru',
         },
         {
           number: '6',
@@ -182,6 +206,8 @@ export default function BeerTable() {
           SRM: '4-7',
           bgColor: 'bg-belgianAle',
           borderColor: 'border-belgianAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Trippel',
+          example: 'e.g.: Westmalle Tripel, Affligem Tripel, Grimbergen Tripel',
         },
         {
           number: '9',
@@ -193,6 +219,8 @@ export default function BeerTable() {
           SRM: '4-10',
           bgColor: 'bg-belgianAle',
           borderColor: 'border-belgianAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Saison',
+          example: 'e.g.: Saison Dupont, Moinette, Laforet',
         },
         {
           number: '16',
@@ -204,6 +232,8 @@ export default function BeerTable() {
           SRM: '4-14',
           bgColor: 'bg-belgianAle',
           borderColor: 'border-belgianAleBorder',
+          link: 'https://beers.su/beers/pale-ale-belgian',
+          example: 'e.g.: Celis Pale Bock, DeKoninck Special Palm Ale, Ginder Ale',
         },
         {
           number: '29',
@@ -215,6 +245,8 @@ export default function BeerTable() {
           SRM: '7-20',
           bgColor: 'bg-belgianAle',
           borderColor: 'border-belgianAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Belgian_Strong_Dark_Ale',
+          example: 'e.g.: Pawel Kwak, Gourden Carolus, Scaldis, Rocherfort 10, Chimay Grand Reserve',
         },
         {
           number: '43',
@@ -226,8 +258,9 @@ export default function BeerTable() {
           SRM: '10-20',
           bgColor: 'bg-belgianAle',
           borderColor: 'border-belgianAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Dubbel',
+          example: 'e.g.: Westmalle Dubbel, LaTrappe Dubbel, Affligem Dubbel',
         }
-
       ]   
     },
     {
@@ -245,6 +278,8 @@ export default function BeerTable() {
           SRM: '4-11',
           bgColor: 'bg-paleAle',
           borderColor: 'border-paleAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Pale_ale',
+          example: 'e.g.: Draught Bass, Samuel Smith Old Brewery Pale Ale',
         },
         {
           number: '17',
@@ -256,6 +291,8 @@ export default function BeerTable() {
           SRM: '4-11',
           bgColor: 'bg-paleAle',
           borderColor: 'border-paleAleBorder',
+          link: 'https://en.wikipedia.org/wiki/American_Pale_Ale',
+          example: 'e.g.: Sierra Nevada Pale Ale, Summit Pale Ale, Geary`s Pale Ale',
         },
         {
           number: '30',
@@ -267,6 +304,8 @@ export default function BeerTable() {
           SRM: '8-14',
           bgColor: 'bg-paleAle',
           borderColor: 'border-paleAleBorder',
+          link: 'https://en.wikipedia.org/wiki/India_Pale_Ale',
+          example: 'e.g.: Anchor Liberty Ale, Samuel Smith`s India Ale, Fuller IPA, OWE IPA',
         },
         {
           number: '44',
@@ -278,6 +317,8 @@ export default function BeerTable() {
           SRM: '11-18',
           bgColor: 'bg-paleAle',
           borderColor: 'border-paleAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Amber_lager',
+          example: 'e.g.: Big Time Atlas Amber, Bell`s Amber, North Coast Red Seal Ale',
         },
       ]   
     },
@@ -296,6 +337,8 @@ export default function BeerTable() {
           SRM: '6-12',
           bgColor: 'bg-englishBitter',
           borderColor: 'border-englishBitterBorder',
+          link: 'https://en.wikipedia.org/wiki/Ordinary_bitter',
+          example: 'e.g.: Young`s Bitter, HSB Premium Bitter',
         },
         {
           number: '31',
@@ -307,6 +350,8 @@ export default function BeerTable() {
           SRM: '12-14',
           bgColor: 'bg-englishBitter',
           borderColor: 'border-englishBitterBorder',
+          link: 'https://en.wikipedia.org/wiki/Bitter_(beer)',
+          example: 'e.g.: Young`s Ramrod, Fuller`s London Pride',
         },
         {
           number: '45',
@@ -318,6 +363,8 @@ export default function BeerTable() {
           SRM: '12-14',
           bgColor: 'bg-englishBitter',
           borderColor: 'border-englishBitterBorder',
+          link: 'https://en.wikipedia.org/wiki/Bitter_(beer)',
+          example: 'e.g.: Fuller`s ESB, Young`s Special London Ale',
         },
       ]   
     },
