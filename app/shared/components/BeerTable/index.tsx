@@ -4,10 +4,10 @@ import DialogModal from "../DialogModal/DialogModal";
 import BeerColumnTitle from "./BeerColumnTitle";
 import BeerElement from "./BeerElement";
 import SRM from "./SRM";
-import { SubElementType } from "./types/subElement";
-import { SrmRatingType } from "./types/srmRating";
 import { BeerElements } from "./types/BeerElements";
 import { BeerFooterElements } from "./types/BeerFooterElements";
+import { SrmRatingType } from "./types/SrmRating";
+import { SubElementType } from "./types/SubElement";
 
 
 export default function BeerTable() {
@@ -99,7 +99,7 @@ export default function BeerTable() {
     },
     {
       id: 'k9d2',
-      title: 'LAMBIC & SOUR',
+      title: 'LAMBIC\n & SOUR',
       titletextColor: 'text-lambicSourBorder',
       elements: [
         {
@@ -1036,7 +1036,7 @@ export default function BeerTable() {
     <>
     <div className="container flex justify-center items-end flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
       {beerElements.map(el => {
-        return  <div className="flex flex-col gap-3" key={el.id}>
+        return  <div className="flex flex-col gap-3 whitespace-pre-line" key={el.id}>
         <BeerColumnTitle 
           title={el.title}
           titletextColor={el.titletextColor}          
@@ -1097,7 +1097,6 @@ export default function BeerTable() {
               bgColor={el.bgColor}
             />
             })}
-            
           </div>
       </div>
     </div>
@@ -1118,4 +1117,3 @@ export default function BeerTable() {
   </>
   );
 }
-
