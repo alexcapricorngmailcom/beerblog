@@ -5,9 +5,13 @@ import BeerColumnTitle from "./BeerColumnTitle";
 import BeerElement from "./BeerElement";
 import SRM from "./SRM";
 import { SubElementType } from "./types/subElement";
+import { SrmRatingType } from "./types/srmRating";
+import { BeerElements } from "./types/BeerElements";
+import { BeerFooterElements } from "./types/BeerFooterElements";
+
 
 export default function BeerTable() {
-  const beerElements = [
+  const beerElements: BeerElements[] = [
     {
       id: 'a7f3',
       title: 'WHEAT BEER',
@@ -122,7 +126,7 @@ export default function BeerTable() {
           bgColor: 'bg-lambicSour',
           borderColor: 'border-lambicSourBorder',
           link: 'https://en.wikipedia.org/wiki/Gueuze',
-          example: 'e.g.: Lindeman`s Gueuze Lambic, Belle-Vue Gueuze, Boon, Cantillon, Hanssens'
+          example: 'e.g.: Lindeman\'s Gueuze Lambic, Belle-Vue Gueuze, Boon, Cantillon, Hanssens'
         },
         {
           number: '8',
@@ -135,7 +139,7 @@ export default function BeerTable() {
           bgColor: 'bg-lambicSour',
           borderColor: 'border-lambicSourBorder',
           link: 'https://en.wikipedia.org/wiki/Lambic#Faro',
-          example: 'e.g.: Lindeman`s',
+          example: 'e.g.: Lindeman\'s',
         },
         {
           number: '15',
@@ -148,7 +152,7 @@ export default function BeerTable() {
           bgColor: 'bg-lambicSour',
           borderColor: 'border-lambicSourBorder',
           link: 'https://en.wikipedia.org/wiki/Lambic#Fruit',
-          example: 'e.g.: Belle-Vue Kriek, Lindeman`s Framboise Lambic',
+          example: 'e.g.: Belle-Vue Kriek, Lindeman\'s Framboise Lambic',
         },
         {
           number: '28',
@@ -174,7 +178,7 @@ export default function BeerTable() {
           bgColor: 'bg-lambicSour',
           borderColor: 'border-lambicSourBorder',
           link: 'https://en.wikipedia.org/wiki/Oud_bruin',
-          example: 'e.g.: Liefman`s Goudenband, Felix, Roman',
+          example: 'e.g.: Liefman\'s Goudenband, Felix, Roman',
         }
       ]   
     },
@@ -292,7 +296,7 @@ export default function BeerTable() {
           bgColor: 'bg-paleAle',
           borderColor: 'border-paleAleBorder',
           link: 'https://en.wikipedia.org/wiki/American_Pale_Ale',
-          example: 'e.g.: Sierra Nevada Pale Ale, Summit Pale Ale, Geary`s Pale Ale',
+          example: 'e.g.: Sierra Nevada Pale Ale, Summit Pale Ale, Geary\'s Pale Ale',
         },
         {
           number: '30',
@@ -305,7 +309,7 @@ export default function BeerTable() {
           bgColor: 'bg-paleAle',
           borderColor: 'border-paleAleBorder',
           link: 'https://en.wikipedia.org/wiki/India_Pale_Ale',
-          example: 'e.g.: Anchor Liberty Ale, Samuel Smith`s India Ale, Fuller IPA, OWE IPA',
+          example: 'e.g.: Anchor Liberty Ale, Samuel Smith\'s India Ale, Fuller IPA, OWE IPA',
         },
         {
           number: '44',
@@ -318,7 +322,7 @@ export default function BeerTable() {
           bgColor: 'bg-paleAle',
           borderColor: 'border-paleAleBorder',
           link: 'https://en.wikipedia.org/wiki/Amber_lager',
-          example: 'e.g.: Big Time Atlas Amber, Bell`s Amber, North Coast Red Seal Ale',
+          example: 'e.g.: Big Time Atlas Amber, Bell\'s Amber, North Coast Red Seal Ale',
         },
       ]   
     },
@@ -338,7 +342,7 @@ export default function BeerTable() {
           bgColor: 'bg-englishBitter',
           borderColor: 'border-englishBitterBorder',
           link: 'https://en.wikipedia.org/wiki/Ordinary_bitter',
-          example: 'e.g.: Young`s Bitter, HSB Premium Bitter',
+          example: 'e.g.: Young\'s Bitter, HSB Premium Bitter',
         },
         {
           number: '31',
@@ -351,7 +355,7 @@ export default function BeerTable() {
           bgColor: 'bg-englishBitter',
           borderColor: 'border-englishBitterBorder',
           link: 'https://en.wikipedia.org/wiki/Bitter_(beer)',
-          example: 'e.g.: Young`s Ramrod, Fuller`s London Pride',
+          example: 'e.g.: Young\'s Ramrod, Fuller\'s London Pride',
         },
         {
           number: '45',
@@ -364,7 +368,7 @@ export default function BeerTable() {
           bgColor: 'bg-englishBitter',
           borderColor: 'border-englishBitterBorder',
           link: 'https://en.wikipedia.org/wiki/Bitter_(beer)',
-          example: 'e.g.: Fuller`s ESB, Young`s Special London Ale',
+          example: 'e.g.: Fuller\'s ESB, Young\'s Special London Ale',
         },
       ]   
     },
@@ -383,6 +387,8 @@ export default function BeerTable() {
           SRM: '8-17',
           bgColor: 'bg-scotishAle',
           borderColor: 'border-scotishAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Scottish_beer',
+          example: 'e.g.: Belhaven 60/-, Caledonian 60/-, Maclay 60/- Light, Highland Dark Light',
         },
         {
           number: '32',
@@ -394,6 +400,8 @@ export default function BeerTable() {
           SRM: '10-19',
           bgColor: 'bg-scotishAle',
           borderColor: 'border-scotishAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Scottish_beer',
+          example: 'e.g.: Greenmantle Ale, Highland Heavy, Young\'s Scotch Ale',
         },
         {
           number: '46',
@@ -405,6 +413,8 @@ export default function BeerTable() {
           SRM: '10-19',
           bgColor: 'bg-scotishAle',
           borderColor: 'border-scotishAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Scottish_beer',
+          example: 'e.g.: Highland Severe, Orkney Dark Island, Sherlock\'s Home Piper\'s Pride',
         },
       ]   
     },
@@ -423,6 +433,8 @@ export default function BeerTable() {
           SRM: '10-25',
           bgColor: 'bg-brownAle',
           borderColor: 'border-brownAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Mild_ale',
+          example: 'e.g.: Bank\'s Mild, Fuller\'s Summer Ale',
         },
         {
           number: '33',
@@ -434,6 +446,8 @@ export default function BeerTable() {
           SRM: '15-22',
           bgColor: 'bg-brownAle',
           borderColor: 'border-brownAleBorder',
+          link: 'https://beers.su/beers/brown-ale-american',
+          example: 'e.g.: Pete\'s Wicked Ale, Brooklyn Brown Ale, Shipyard Moos Brown',
         },
         {
           number: '47',
@@ -445,6 +459,8 @@ export default function BeerTable() {
           SRM: '15-30',
           bgColor: 'bg-brownAle',
           borderColor: 'border-brownAleBorder',
+          link: 'https://en.wikipedia.org/wiki/English_brown_ale',
+          example: 'e.g.: Newcastle Brown Ale, Samuel Smith Nut Brown',
         },
       ]   
     },
@@ -463,6 +479,8 @@ export default function BeerTable() {
           SRM: '20-30',
           bgColor: 'bg-porter',
           borderColor: 'border-porterBorder',
+          link: 'https://en.wikipedia.org/wiki/Porter_(beer)',
+          example: 'e.g.: Samuel Smith Taddy Porter, Fuller\'s London Porter',
         },
         {
           number: '48',
@@ -474,6 +492,8 @@ export default function BeerTable() {
           SRM: '30-40',
           bgColor: 'bg-porter',
           borderColor: 'border-porterBorder',
+          link: 'https://en.wikipedia.org/wiki/Porter_(beer)',
+          example: 'e.g.: Sierra Nevada Porter, Anchor Porter',
         },
       ]   
     },
@@ -492,6 +512,8 @@ export default function BeerTable() {
           SRM: '40+',
           bgColor: 'bg-lightStout',
           borderColor: 'border-lightStoutBorder',
+          link: 'https://en.wikipedia.org/wiki/Dry_stout',
+          example: 'e.g.: Guinness Draught Stout, Murphy\'s Stout, Beamish Stout',
         },
         {
           number: '35',
@@ -503,6 +525,8 @@ export default function BeerTable() {
           SRM: '40+',
           bgColor: 'bg-lightStout',
           borderColor: 'border-lightStoutBorder',
+          link: 'https://en.wikipedia.org/wiki/Sweet_stout',
+          example: 'e.g.: Mackenson\'s XXX Stout, Samuel Adams Cream Stout',
         },
         {
           number: '49',
@@ -514,6 +538,8 @@ export default function BeerTable() {
           SRM: '40+',
           bgColor: 'bg-lightStout',
           borderColor: 'border-lightStoutBorder',
+          link: 'https://en.wikipedia.org/wiki/Oatmeal_stout',
+          example: 'e.g.: Samuel Smith Oatmeal Stout, Young\'s Oatmeal Stout, Brew Moon Eclipse',
         },
       ]   
     },
@@ -532,6 +558,8 @@ export default function BeerTable() {
           SRM: '40+',
           bgColor: 'bg-heavyStout',
           borderColor: 'border-heavyStoutBorder',
+          link: 'https://beers.su/beers/stout-foreign-export',
+          example: 'e.g.: ABC Stout, Guinness Foreign Extra Stout',
         },
         {
           number: '36',
@@ -543,6 +571,8 @@ export default function BeerTable() {
           SRM: '40+',
           bgColor: 'bg-heavyStout',
           borderColor: 'border-heavyStoutBorder',
+          link: 'https://en.wikipedia.org/wiki/Imperial_stout',
+          example: 'e.g.: Samuel Smith Imperial Stout, Courage Imperial Stout',
         },
         {
           number: '50',
@@ -554,6 +584,8 @@ export default function BeerTable() {
           SRM: '40+',
           bgColor: 'bg-heavyStout',
           borderColor: 'border-heavyStoutBorder',
+          link: 'https://en.wikipedia.org/wiki/Russian_Imperial_Stout',
+          example: 'e.g.: Harvey and Son\'s Imperial Extra Double Stout',
         },
       ]   
     },
@@ -572,6 +604,8 @@ export default function BeerTable() {
           SRM: '2-4',
           bgColor: 'bg-pilsner',
           borderColor: 'border-pilsnerBorder',
+          link: 'https://beers.su/beers/pilsner-german',
+          example: 'e.g.: Kulmbacher Moenchshof Pils, Jever Pils, Wickuler Pilsner',
         },
         {
           number: '37',
@@ -583,6 +617,8 @@ export default function BeerTable() {
           SRM: '3-5',
           bgColor: 'bg-pilsner',
           borderColor: 'border-pilsnerBorder',
+          link: 'https://en.wikipedia.org/wiki/Pilsner',
+          example: 'e.g.: Pilsner Urquell, Gambrinus Pilsner, Budweiser Budvar',
         },
         {
           number: '51',
@@ -594,6 +630,8 @@ export default function BeerTable() {
           SRM: '3-6',
           bgColor: 'bg-pilsner',
           borderColor: 'border-pilsnerBorder',
+          link: 'https://legacy.bjcp.org/2008styles/style02.php#1c',
+          example: 'e.g.: Pete\'s Signature Pilsner, Milwaukee Pilsner',
         },
       ]   
     },
@@ -612,6 +650,8 @@ export default function BeerTable() {
           SRM: '2-4',
           bgColor: 'bg-americanLager',
           borderColor: 'border-americanLagerBorder',
+          link: 'https://legacy.bjcp.org/2008styles/style01.php#1a',
+          example: 'e.g.: Bud Light, Miller Lite',
         },
         {
           number: '24',
@@ -623,6 +663,8 @@ export default function BeerTable() {
           SRM: '2-6',
           bgColor: 'bg-americanLager',
           borderColor: 'border-americanLagerBorder',
+          link: 'https://beers.su/beers/lager-american',
+          example: 'e.g.: Budweiser, Molson Golden, Kirin',
         },
         {
           number: '38',
@@ -634,6 +676,8 @@ export default function BeerTable() {
           SRM: '2-8',
           bgColor: 'bg-americanLager',
           borderColor: 'border-americanLagerBorder',
+          link: 'https://en.wikipedia.org/wiki/American_lager',
+          example: 'e.g.: Michelob',
         },
         {
           number: '52',
@@ -645,6 +689,8 @@ export default function BeerTable() {
           SRM: '10-20',
           bgColor: 'bg-americanLager',
           borderColor: 'border-americanLagerBorder',
+          link: 'https://beers.su/beers/lager-dark',
+          example: 'e.g.: Michelob Dark, Lowenbrau Dark, Beck\'s dark, Saint Pauli Girl Dark',
         },
       ]   
     },
@@ -663,6 +709,8 @@ export default function BeerTable() {
           SRM: '3-5',
           bgColor: 'bg-europeanLager',
           borderColor: 'border-europeanLagerBorder',
+          link: 'https://en.wikipedia.org/wiki/Helles',
+          example: 'e.g.: Black Forest Lager, Spaten Premium Lager',
         },
         {
           number: '25',
@@ -674,6 +722,8 @@ export default function BeerTable() {
           SRM: '4-6',
           bgColor: 'bg-europeanLager',
           borderColor: 'border-europeanLagerBorder',
+          link: 'https://en.wikipedia.org/wiki/Dortmunder_(beer)',
+          example: 'e.g.: Dortmunder Gold, DAB Original, Berghoff Original Lager',
         },
         {
           number: '39',
@@ -685,6 +735,8 @@ export default function BeerTable() {
           SRM: '17-23',
           bgColor: 'bg-europeanLager',
           borderColor: 'border-europeanLagerBorder',
+          link: 'https://en.wikipedia.org/wiki/Munich_dunkel_lager',
+          example: 'e.g.: Ayinger Altbairisch Dunkel, Hacker-Pschorr Alt Munich Dark',
         },
         {
           number: '53',
@@ -696,6 +748,8 @@ export default function BeerTable() {
           SRM: '25-40+',
           bgColor: 'bg-europeanLager',
           borderColor: 'border-europeanLagerBorder',
+          link: 'https://en.wikipedia.org/wiki/Schwarzbier',
+          example: 'e.g.: Kulmbacher monchschof Kloster Schwartz-Bier',
         },
       ]   
     },
@@ -714,6 +768,8 @@ export default function BeerTable() {
           SRM: '4-10',
           bgColor: 'bg-bockLager',
           borderColor: 'border-bockLagerBorder',
+          link: 'https://en.wikipedia.org/wiki/Bock#Maibock_or_helles_bock',
+          example: 'e.g.: Wuerzburger Maibock, Spaten Premium Bock, Pschorr Marzenbock',
         },
         {
           number: '26',
@@ -725,6 +781,8 @@ export default function BeerTable() {
           SRM: '12-30',
           bgColor: 'bg-bockLager',
           borderColor: 'border-bockLagerBorder',
+          link: 'https://en.wikipedia.org/wiki/Bock#Doppelbock',
+          example: 'e.g.: Paulaner Salvator, Spaten Optimator',
         },
         {
           number: '40',
@@ -736,6 +794,8 @@ export default function BeerTable() {
           SRM: '15-30',
           bgColor: 'bg-bockLager',
           borderColor: 'border-bockLagerBorder',
+          link: 'https://en.wikipedia.org/wiki/Bock#Traditional_bock',
+          example: 'e.g.: Aass bock, Hacker-Pschorr Dunkel Bock, Dunkel Ritter Bock, Boiler Room Red',
         },
         {
           number: '54',
@@ -747,12 +807,14 @@ export default function BeerTable() {
           SRM: '18-40+',
           bgColor: 'bg-bockLager',
           borderColor: 'border-bockLagerBorder',
+          link: 'https://en.wikipedia.org/wiki/Bock#Eisbock',
+          example: 'e.g.: Niagara Eisbock',
         },
       ]   
     },
   ];
 
-  const beerFooterElements = [
+  const beerFooterElements:BeerFooterElements[] = [
     { id: 'b2n7',           
       elements: [
         {
@@ -765,6 +827,8 @@ export default function BeerTable() {
           SRM: '4-5',
           bgColor: 'bg-brownAle',
           borderColor: 'border-brownAleBorder',
+          link: 'https://en.wikipedia.org/wiki/K%C3%B6lsch_(beer)',
+          example: 'e.g.: Malzmuehle, Hellers, Hollywood Blonde',
         },
         {
           number: '61',
@@ -776,6 +840,8 @@ export default function BeerTable() {
           SRM: '11-19',
           bgColor: 'bg-brownAle',
           borderColor: 'border-brownAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Altbier',
+          example: 'e.g.: DAB Dark, Diebels Alt, Alaskan Amber, Grolsch Autumn Amber',
         },
       ]   
     },
@@ -791,6 +857,8 @@ export default function BeerTable() {
           SRM: '5-12',
           bgColor: 'bg-scotishAle',
           borderColor: 'border-scotishAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Bi%C3%A8re_de_Garde',
+          example: 'e.g.: Jenlain, Castelain, Septante Cinq, Brasseurs Biére de Garde',
         },
       ]   
     },
@@ -806,6 +874,8 @@ export default function BeerTable() {
           SRM: '7-12',
           bgColor: 'bg-pilsner',
           borderColor: 'border-pilsnerBorder',
+          link: 'https://en.wikipedia.org/wiki/Oktoberfest_Beer',
+          example: 'e.g.: Spaten Ur-Marzen, Paulaner Oktoberfest, Wuerzburger Oktoberfest.',
         },
         {
           number: '62',
@@ -817,6 +887,8 @@ export default function BeerTable() {
           SRM: '8-14',
           bgColor: 'bg-pilsner',
           borderColor: 'border-pilsnerBorder',
+          link: 'https://en.wikipedia.org/wiki/Vienna_lager',
+          example: 'e.g.: Negra Modelo, Portland lager, Leinenkugel Red',
         },
       ]   
     },
@@ -832,6 +904,8 @@ export default function BeerTable() {
           SRM: '8-14',
           bgColor: 'bg-lambicSour',
           borderColor: 'border-lambicSourBorder',
+          link: 'https://en.wikipedia.org/wiki/Cream_ale',
+          example: 'e.g.: Genesee Cream Ale, Little Kings Cream Ale',
         },
         {
           number: '63',
@@ -843,6 +917,8 @@ export default function BeerTable() {
           SRM: '8-17',
           bgColor: 'bg-lambicSour',
           borderColor: 'border-lambicSourBorder',
+          link: 'https://en.wikipedia.org/wiki/Steam_beer',
+          example: 'e.g.: Anchor Steam, Old Dominion Victor Amber',
         },
       ]   
     },
@@ -858,6 +934,8 @@ export default function BeerTable() {
           SRM: '12-17',
           bgColor: 'bg-porter',
           borderColor: 'border-porterBorder',
+          link: 'https://en.wikipedia.org/wiki/Smoked_beer',
+          example: 'e.g.: Schlenkerla Rauchbier',
         },
         {
           number: '64',
@@ -869,6 +947,8 @@ export default function BeerTable() {
           SRM: '14-22',
           bgColor: 'bg-porter',
           borderColor: 'border-porterBorder',
+          link: 'https://en.wikipedia.org/wiki/Barley_wine',
+          example: 'e.g.: Young\'s Old Nick, Fuller\'s Golden Pride, Sierra Nevada Bigfoot',
         },
       ]   
     },
@@ -884,6 +964,8 @@ export default function BeerTable() {
           SRM: '12-16',
           bgColor: 'bg-paleAle',
           borderColor: 'border-paleAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Old_ale',
+          example: 'e.g.: Theakston Old Peculier, Young\'s Winter Warmer, Marston Owd Roger',
         },
         {
           number: '65',
@@ -895,12 +977,14 @@ export default function BeerTable() {
           SRM: '10-40+',
           bgColor: 'bg-paleAle',
           borderColor: 'border-paleAleBorder',
+          link: 'https://en.wikipedia.org/wiki/Scotch_Ale',
+          example: 'e.g.: Traquair House, MacAndrew\'s Scotch Ale',
         },
       ]   
     },
   ];
 
-  const srmRating = [
+  const srmRating: SrmRatingType[] = [
     {
       number: '0',
       bgColor: 'bg-srm0',

@@ -2,7 +2,7 @@
 
 import { Dispatch, SetStateAction } from 'react'
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
-import { SubElementType } from '../BeerTable/types/subElement'
+import { SubElementType } from '../BeerTable/types/SubElement'
 
 export default function DialogModal(props:PropsDialogModalType) {
 

@@ -1,6 +1,6 @@
 "use client"
 
-import { SubElementType } from "./types/subElement";
+import { SubElementType } from "./types/SubElement";
 
 export default function BeerElement(props: PropsBeerElementType) {
 

@@ -8,6 +8,6 @@ export type SubElementType = {
     SRM: string;
     bgColor: string;
     borderColor: string;
-    // link: string;
-    // example: string;
+    link: string;
+    example: string;
 }
