@@ -1,14 +1,10 @@
 "use client"
 import { useState } from "react";
-import DialogModal from "../DialogModal/DialogModal";
+import DialogModal from "../DialogModal";
 import BeerColumnTitle from "./BeerColumnTitle";
 import BeerElement from "./BeerElement";
 import SRM from "./SRM";
-import { BeerElements } from "./types/BeerElements";
-import { BeerFooterElements } from "./types/BeerFooterElements";
-import { SrmRatingType } from "./types/SrmRating";
-import { SubElementType } from "./types/SubElement";
-
+import { BeerElements, BeerFooterElements, SrmRatingType, SubElementType } from "./types/beerTable";
 
 export default function BeerTable() {
   const beerElements: BeerElements[] = [
@@ -1033,7 +1029,8 @@ export default function BeerTable() {
   }
 
   return (
-    <>
+    <section className="mt-10">
+    <h1 className="container mx-auto font-bold text-center uppercase">Periodic Table of Beer Styles</h1>
     <div className="container flex justify-center items-end flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
       {beerElements.map(el => {
         return  <div className="flex flex-col gap-3 whitespace-pre-line" key={el.id}>
@@ -1048,6 +1045,7 @@ export default function BeerTable() {
           subElement={subElement}
         />
         })}
+        
         {elementDialogModalInfo &&
           <DialogModal
             isOpen={open}
@@ -1058,7 +1056,6 @@ export default function BeerTable() {
       </div> 
       })}
     </div>
-    
     <div className="container flex justify-center items-center flex-wrap gap-3 mx-auto mt-10 myxl:w-full xl:w-[55%] md:w-[100%] sm:w-[45%]">
     <div className="flex myxl:justify-center items-center flex-wrap gap-3 myxl:w-[49.5%] md:w-[100%] s:justify-center">
       <div className="flex justify-center items-center gap-3 myxl:w-[49%]">
@@ -1078,18 +1075,18 @@ export default function BeerTable() {
           </div>
         </div>
         <div className="text-[12px] leading-[16px] font-bold">
-          <p>1 - number</p>
-          <p >1.026-1.036 - initialDensity</p>
-          <p>1.006-1.00- finalDensity</p>
-          <p>Berliner Weisse - name</p>
-          <p>2.5-3.6% - ABV</p>
-          <p>3-12 - IBU</p>
-          <p>2-4 - SRM rating</p>
+          <p className="font-bold">1 - number</p>
+          <p className="font-bold">1.026-1.036 - initialDensity</p>
+          <p className="font-bold">1.006-1.00 - finalDensity</p>
+          <p className="font-bold">Berliner Weisse - name</p>
+          <p className="font-bold">2.5-3.6% - ABV</p>
+          <p className="font-bold">3-12 - IBU</p>
+          <p className="font-bold">2-4 - SRM rating</p>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center myxl:w-[49%] text-[12px] font-bold">
           <h3>SRM rating</h3>
-          <div className="flex [&>div+div]:ml-1">
+          <div className="flex mt-2 [&>div+div]:ml-1">
             {srmRating.map(el => {
               return <SRM 
               key={el.number}
@@ -1114,6 +1111,6 @@ export default function BeerTable() {
       })}
     </div>
   </div>
-  </>
+  </section>
   );
 }
