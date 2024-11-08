@@ -1030,7 +1030,7 @@ export default function BeerTable() {
 
   return (
     <section className="mt-10">
-    <h1 className="container mx-auto font-bold text-center uppercase">Periodic Table of Beer Styles</h1>
+    <h2 className="container mx-auto font-bold text-center uppercase">Periodic Table of Beer Styles</h2>
     <div className="container flex justify-center items-end flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
       {beerElements.map(el => {
         return  <div className="flex flex-col gap-3 whitespace-pre-line" key={el.id}>

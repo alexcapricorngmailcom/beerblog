@@ -23,7 +23,12 @@ export default function DialogModal(props:PropsDialogModalType) {
               <div className="sm:flex sm:items-start">
                 <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                   <DialogTitle as="h3" className="text-base font-semibold text-gray-900">
-                    <a className="underline hover:no-underline" target='_blank' rel='noopener noreferrer' href={props.elementDialogModalInfo.link}>{props.elementDialogModalInfo.name.replace('- ', '')}</a>
+                    <a className="font-bold underline hover:no-underline" target='_blank' rel='noopener noreferrer' href={props.elementDialogModalInfo.link}>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mr-2 size-4 inline-block">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                      </svg>
+                      {props.elementDialogModalInfo.name.replace('- ', '')} 
+                    </a>
                   </DialogTitle>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">ABV: {props.elementDialogModalInfo.ABV}, IBU: {props.elementDialogModalInfo.IBU}</p>
