@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="py-4 bg-gray-800">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-3">
         <nav className="flex justify-between items-center">
           <Link href={'/'} className="flex hover:opacity-80 duration-300">
             <div className="relative w-10 h-10 bg-yellow-500 text-gray-800">

@@ -1030,8 +1030,8 @@ export default function BeerTable() {
 
   return (
     <section className="mt-10">
-    <h2 className="container mx-auto font-bold text-center uppercase">Periodic Table of Beer Styles</h2>
-    <div className="container flex justify-center items-end flex-wrap gap-3 mx-auto myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
+    <h2 className="container mx-auto px-3 font-bold text-center uppercase">Periodic Table of Beer Styles</h2>
+    <div className="container mx-auto px-3 flex justify-center items-end flex-wrap gap-3 myxl:w-full xl:w-[55%] md:w-[65%] sm:w-[80%]">
       {beerElements.map(el => {
         return  <div className="flex flex-col gap-3 whitespace-pre-line" key={el.id}>
         <BeerColumnTitle 
@@ -1056,7 +1056,7 @@ export default function BeerTable() {
       </div> 
       })}
     </div>
-    <div className="container flex justify-center items-center flex-wrap gap-3 mx-auto mt-10 myxl:w-full xl:w-[55%] md:w-[100%] sm:w-[45%]">
+    <div className="container mx-auto mt-10 px-3 flex justify-center items-center flex-wrap gap-3 myxl:w-full xl:w-[55%] md:w-[100%] sm:w-[45%]">
     <div className="flex myxl:justify-center items-center flex-wrap gap-3 myxl:w-[49.5%] md:w-[100%] s:justify-center">
       <div className="flex justify-center items-center gap-3 myxl:w-[49%]">
         <div className={`flex items-center relative w-20 h-20 leading-none font-semibold bg-wheatBeer border-2 border-wheatBeerBorder cursor-default`}>

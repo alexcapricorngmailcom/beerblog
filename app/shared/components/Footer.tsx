@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="pt-4 pb-[75px] bg-gray-800">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-3">
         <div className="flex items-center">
           <Link href={'/'} className="flex hover:opacity-80 duration-300">
             <div className="relative w-10 h-10 bg-yellow-500 text-gray-800">
@@ -19,8 +19,7 @@ export default function Footer() {
             </div>
           </Link>
           <div className="flex-1 ml-5 font-semibold text-center text-yellow-500"> 
-            Данный сайт не является коммерческим проектом. Разработан в учебных целях и является адаптацией&nbsp; 
-            <Link href={'https://beerscience.in.ua/'} target="_blank" rel="noopener noreferrer" className="hover:underline">beerscience.in.ua</Link>
+            This site is non-commercial project. It was created by Next.js and only for educational purposes. Any coincidence are accidental
           </div>
           
         </div>

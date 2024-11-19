@@ -26,7 +26,7 @@ export default function ScrollToTopButton() {
   return (
     <> 
     {scrollToTopIcon &&
-      <button onClick={scrollUp} className="absolute top-[50%] right-0 translate-y-[-50%] rounded bg-yellow-500 cursor-pointer hover:bg-yellow-400">
+      <button onClick={scrollUp} className="absolute top-[50%] right-4 translate-y-[-50%] rounded bg-yellow-500 cursor-pointer hover:bg-yellow-400">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-8">
         <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
         </svg>
