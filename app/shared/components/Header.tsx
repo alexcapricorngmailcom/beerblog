@@ -18,7 +18,7 @@ export default function Header() {
               <span className="absolute bottom-0 left-1 text-2xl font-bold ">Blog</span>
             </div>
           </Link>
-          <div className="nav-link flex flex-row">
+          <div className="nav-link hidden sm:flex flex-row">
             <Link href={'/about'} className="text-xl font-bold text-yellow-500 hover:opacity-80 duration-300">About</Link>
             <Link href={'/articles'} className="text-xl font-bold pl-5 text-yellow-500 hover:opacity-80 duration-300">Articles</Link>
             <Link href={'/contacts'} className="text-xl font-bold pl-5 text-yellow-500 hover:opacity-80 duration-300">Contacts</Link>

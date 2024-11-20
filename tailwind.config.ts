@@ -68,12 +68,15 @@ const config: Config = {
   
         'lg': '1024px',
         // => @media (min-width: 1024px) { ... }
+
+        'mylg': '1150px',
+        // => @media (min-width: 1150px) { ... }
   
         'xl': '1280px',
         // => @media (min-width: 1280px) { ... }
         
-        'myxl': '1300px',
-        // => @media (min-width: 1300px) { ... }
+        'myxl': '1320px',
+        // => @media (min-width: 1320px) { ... }
   
         '2xl': '1536x',
         // => @media (min-width: 1536px) { ... }
