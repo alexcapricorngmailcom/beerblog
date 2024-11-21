@@ -1030,87 +1030,87 @@ export default function BeerTable() {
 
   return (
     <section className="mt-10">
-    <h2 className="container mx-auto px-3 font-bold text-center uppercase">Periodic Table of Beer Styles</h2>
-    <div className="container mx-auto px-3 flex justify-center items-end flex-wrap gap-3 myxl:w-full xl:w-[55%] mylg:w-[59%] lg:w-[66%] md:w-[90%] sm:w-[80%]">
-      {beerElements.map(el => {
-        return  <div className="flex flex-col gap-3 whitespace-pre-line" key={el.id}>
-        <BeerColumnTitle 
-          title={el.title}
-          titletextColor={el.titletextColor}          
-        />
-        
-        {el.elements.map(subElement => {
-          return <BeerElement key={subElement.number}
-          onShowElementInfo={handleClick}
-          subElement={subElement}
-        />
-        })}
-        
-        {elementDialogModalInfo &&
-          <DialogModal
-            isOpen={open}
-            setOpen={setOpen}
-            elementDialogModalInfo={elementDialogModalInfo}
+      <h2 className="container mx-auto px-3 font-bold text-center uppercase">Periodic Table of Beer Styles</h2>
+      <div className="container mx-auto px-3 flex justify-center items-end flex-wrap gap-3 myxl:w-full xl:w-[55%] mylg:w-[59%] lg:w-[66%] mymd1:w-[72%] mymd:w-[80%] md:w-[90%] mysm:w-[75%] sm:w-[78%] s:w-full ">
+        {beerElements.map(el => {
+          return  <div className="flex flex-col gap-3 whitespace-pre-line" key={el.id}>
+          <BeerColumnTitle 
+            title={el.title}
+            titletextColor={el.titletextColor}          
           />
-        }
-      </div> 
-      })}
-    </div>
-    <div className="container mx-auto mt-10 px-3 flex justify-center items-center flex-wrap myxl:gap-3">
-      <div className="flex myxl:justify-center items-center flex-wrap gap-3 myxl:w-[49.5%] s:w-[100%] s:justify-center">
-        <div className="flex justify-center items-center gap-3 myxl:w-[49%]">
-          <div className={`flex items-center relative w-20 h-20 leading-none font-semibold bg-wheatBeer border-2 border-wheatBeerBorder cursor-default`}>
-            <p className="absolute top-0 left-0 w-5 h-5 text-[12px] leading-[1.2rem] text-center text-white bg-black">1</p>
-            <div className="absolute top-0 right-0 pt-[2px] pr-[2px] text-[9px]">
-              <p>1.026-1.036</p>
-              <p>1.006-1.009</p>
-            </div>
-            <p className={`w-full text-[14px] font-bold leading-[1rem] text-center`}>Berliner Weisse</p>
-            <div className="absolute bottom-0 left-0 pb-[2px] pl-[2px] text-[9px]">
-              <p>2.5-3.6%</p>
-              <p>3-12</p>
-            </div>
-            <div className="absolute bottom-0 right-0 pb-[2px] pr-[2px] text-[9px]">
-              <p>2-4</p>
-            </div>
-          </div>
-          <div className="text-[12px] leading-[16px] font-bold">
-            <p className="font-bold">1 - number</p>
-            <p className="font-bold">1.026-1.036 - initialDensity</p>
-            <p className="font-bold">1.006-1.009 - finalDensity</p>
-            <p className="font-bold">Berliner Weisse - name</p>
-            <p className="font-bold">2.5-3.6% - ABV</p>
-            <p className="font-bold">3-12 - IBU</p>
-            <p className="font-bold">2-4 - SRM rating</p>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center items-center myxl:w-[49%] text-[12px] font-bold">
-            <h3>SRM rating</h3>
-            <div className="flex mt-2 [&>div+div]:ml-1">
-              {srmRating.map(el => {
-                return <SRM 
-                key={el.number}
-                number={el.number} 
-                bgColor={el.bgColor}
-              />
-              })}
-            </div>
-        </div>
-      </div>
-      <div className="flex items-start flex-wrap gap-3 myxl:justify-start s:justify-center mt-10 myxl:mt-0 ">
-        {beerFooterElements.map(el => {
-          return  <div className="flex flex-col gap-3" key={el.id}>
+          
           {el.elements.map(subElement => {
-            return <BeerElement
-            key={subElement.number}
+            return <BeerElement key={subElement.number}
             onShowElementInfo={handleClick}
             subElement={subElement}
           />
           })}
+          
+          {elementDialogModalInfo &&
+            <DialogModal
+              isOpen={open}
+              setOpen={setOpen}
+              elementDialogModalInfo={elementDialogModalInfo}
+            />
+          }
         </div> 
         })}
       </div>
-  </div>
-  </section>
+      <div className="container mx-auto mt-10 px-3 flex justify-center items-center flex-wrap myxl:gap-3">
+        <div className="flex myxl:justify-center items-center flex-wrap gap-3 myxl:w-[49.5%] s:w-[100%] s:justify-center">
+          <div className="flex justify-center items-center gap-3 myxl:w-[49%]">
+            <div className={`flex items-center relative w-20 h-20 leading-none font-semibold bg-wheatBeer border-2 border-wheatBeerBorder cursor-default`}>
+              <p className="absolute top-0 left-0 w-5 h-5 text-[12px] leading-[1.2rem] text-center text-white bg-black">1</p>
+              <div className="absolute top-0 right-0 pt-[2px] pr-[2px] text-[9px]">
+                <p>1.026-1.036</p>
+                <p>1.006-1.009</p>
+              </div>
+              <p className={`w-full text-[14px] font-bold leading-[1rem] text-center`}>Berliner Weisse</p>
+              <div className="absolute bottom-0 left-0 pb-[2px] pl-[2px] text-[9px]">
+                <p>2.5-3.6%</p>
+                <p>3-12</p>
+              </div>
+              <div className="absolute bottom-0 right-0 pb-[2px] pr-[2px] text-[9px]">
+                <p>2-4</p>
+              </div>
+            </div>
+            <div className="text-[12px] leading-[16px] font-bold">
+              <p className="font-bold">1 - number</p>
+              <p className="font-bold">1.026-1.036 - initialDensity</p>
+              <p className="font-bold">1.006-1.009 - finalDensity</p>
+              <p className="font-bold">Berliner Weisse - name</p>
+              <p className="font-bold">2.5-3.6% - ABV</p>
+              <p className="font-bold">3-12 - IBU</p>
+              <p className="font-bold">2-4 - SRM rating</p>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center myxl:w-[49%] text-[12px] font-bold">
+              <h3>SRM rating</h3>
+              <div className="flex mt-2 [&>div+div]:ml-1">
+                {srmRating.map(el => {
+                  return <SRM 
+                  key={el.number}
+                  number={el.number} 
+                  bgColor={el.bgColor}
+                />
+                })}
+              </div>
+          </div>
+        </div>
+        <div className="flex items-start flex-wrap gap-3 myxl:justify-start s:justify-center mt-10 myxl:mt-0 ">
+          {beerFooterElements.map(el => {
+            return  <div className="flex flex-col gap-3" key={el.id}>
+            {el.elements.map(subElement => {
+              return <BeerElement
+              key={subElement.number}
+              onShowElementInfo={handleClick}
+              subElement={subElement}
+            />
+            })}
+          </div> 
+          })}
+        </div>
+      </div>
+    </section>
   );
 }

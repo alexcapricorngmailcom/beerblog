@@ -62,9 +62,18 @@ const config: Config = {
 
         'sm': '640px',
         // => @media (min-width: 640px) { ... }
+
+        'mysm': '740px',
+        // => @media (min-width: 740px) { ... }
   
         'md': '768px',
         // => @media (min-width: 768px) { ... }
+
+        'mymd': '845px',
+        // => @media (min-width: 845px) { ... }
+
+        'mymd1': '950px',
+        // => @media (min-width: 845px) { ... }
   
         'lg': '1024px',
         // => @media (min-width: 1024px) { ... }
@@ -78,7 +87,7 @@ const config: Config = {
         'myxl': '1320px',
         // => @media (min-width: 1320px) { ... }
   
-        '2xl': '1536x',
+        '2xl': '1536px',
         // => @media (min-width: 1536px) { ... }
       },
 
